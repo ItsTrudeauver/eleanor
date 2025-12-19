@@ -1,0 +1,161 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>nocontent</title>
+    <style>
+       
+        @keyframes glitch {
+            0% { text-shadow: 0.05em 0 0 rgba(255,0,0,.75),
+                           -0.025em -0.05em 0 rgba(0,255,0,.75),
+                           -0.025em 0.05em 0 rgba(0,0,255,.75); }
+            14% { text-shadow: 0.05em 0 0 rgba(255,0,0,.75),
+                           -0.025em -0.05em 0 rgba(0,255,0,.75),
+                           -0.025em 0.05em 0 rgba(0,0,255,.75); }
+            15% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75),
+                           0.025em 0.025em 0 rgba(0,255,0,.75),
+                           -0.05em -0.05em 0 rgba(0,0,255,.75); }
+            49% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75),
+                           0.025em 0.025em 0 rgba(0,255,0,.75),
+                           -0.05em -0.05em 0 rgba(0,0,255,.75); }
+            50% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,.75),
+                           0.05em 0 0 rgba(0,255,0,.75),
+                           0 -0.05em 0 rgba(0,0,255,.75); }
+            99% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,.75),
+                           0.05em 0 0 rgba(0,255,0,.75),
+                           0 -0.05em 0 rgba(0,0,255,.75); }
+            100% { text-shadow: -0.025em 0 0 rgba(255,0,0,.75),
+                           -0.025em -0.025em 0 rgba(0,255,0,.75),
+                           -0.025em -0.05em 0 rgba(0,0,255,.75); }
+        }
+
+        body {
+            background-color: #001100;
+            color: #00ff44;
+            font-family: 'VT323', monospace;
+            overflow: hidden;
+            margin: 0;
+            padding: 2em;
+            animation: glitch 500ms infinite;
+        }
+
+        .crt {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 255, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 50%),
+                        linear-gradient(90deg, rgba(255,0,0,0.06), rgba(0,255,0,0.02), rgba(0,0,255,0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .error-container {
+            border: 1px solid #00ff44;
+            padding: 2em;
+            margin: 2em auto;
+            width: 80%;
+            box-shadow: 0 0 10px #00ff44;
+            position: relative;
+            background: #000;
+        }
+
+        .ascii-art {
+            white-space: pre;
+            font-size: 0.8em;
+            text-align: center;
+            margin: 2em 0;
+            filter: blur(0.5px);
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.9; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        .status-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #002200;
+            padding: 0.5em;
+            border-top: 1px solid #00ff44;
+            animation: flicker 100ms infinite;
+        }
+    </style>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+</head>
+<body>
+    <div class="crt"></div>
+    
+    <div class="error-container">
+        <h1>there is nothing here</h1>
+        <p>do not snoop around</p>
+        <p>lest you get stared back at</p>
+        
+        <div class="ascii-art">
+            █████                      ██  █████       ████                    █████     
+            ░░███                      ███ ░░███       ░░███                   ░░███      
+          ███████   ██████  ████████  ░░░  ███████      ░███   ██████   ██████  ░███ █████
+         ███░░███  ███░░███░░███░░███     ░░░███░       ░███  ███░░███ ███░░███ ░███░░███ 
+        ░███ ░███ ░███ ░███ ░███ ░███       ░███        ░███ ░███ ░███░███ ░███ ░██████░  
+        ░███ ░███ ░███ ░███ ░███ ░███       ░███ ███    ░███ ░███ ░███░███ ░███ ░███░░███ 
+        ░░████████░░██████  ████ █████      ░░█████     █████░░██████ ░░██████  ████ █████
+         ░░░░░░░░  ░░░░░░  ░░░░ ░░░░░        ░░░░░     ░░░░░  ░░░░░░   ░░░░░░  ░░░░ ░░░░░ 
+                                                                                          
+                                                                                          
+                                                                                          
+                  ████                                                   ███              
+                 ░░███                                                  ░███              
+          ██████  ░███   ██████   ██████   ████████    ██████  ████████ ░███              
+         ███░░███ ░███  ███░░███ ░░░░░███ ░░███░░███  ███░░███░░███░░███░███              
+        ░███████  ░███ ░███████   ███████  ░███ ░███ ░███ ░███ ░███ ░░░ ░███              
+        ░███░░░   ░███ ░███░░░   ███░░███  ░███ ░███ ░███ ░███ ░███     ░░░               
+        ░░██████  █████░░██████ ░░████████ ████ █████░░██████  █████     ███              
+         ░░░░░░  ░░░░░  ░░░░░░   ░░░░░░░░ ░░░░ ░░░░░  ░░░░░░  ░░░░░     ░░░               
+        </div>
+
+        <p>INITIALIZING DATA RECOVERY PROTOCOL...</p>
+        <progress value="42" max="100"></progress>
+        <p>theres nothing to recover</p>
+    </div>
+
+    <div class="status-bar">
+        SYSTEM STATUS: DEGRADED | DSII-13-CENTER PATCHED | LAST BACKUP: NEVER
+    </div>
+
+    <script>
+    
+        function corruptText() {
+            Array.from(document.getElementsByTagName('p')).forEach(p => {
+                if(Math.random() > 0.7) {
+                    const text = p.innerText;
+                    const position = Math.floor(Math.random() * text.length);
+                    p.innerText = text.substr(0, position) + 
+                                String.fromCharCode(0x2580 + Math.floor(Math.random() * 30)) + 
+                                text.substr(position + 1);
+                }
+            });
+        }
+
+        setInterval(() => {
+            console.error('Memory access violation at address 0x' + 
+                        Math.floor(Math.random() * 0xFFFFFF).toString(16));
+            corruptText();
+        }, 500);
+
+        window.onkeydown = function(e) {
+            if(e.key === 'F12') {
+                document.body.innerHTML = 
+                    '<h1>INACCESSIBLE</h1>';
+            }
+        }
+    </script>
+  
+</body>

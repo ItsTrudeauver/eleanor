@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <audio id="bgAudio" autoplay loop hidden>
+        <source src="/assets/audio/cases/Ghost-by-Tim-Beek.mp3" type="audio/mpeg">
+    </audio>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Board</title>
+    <style>
+        body {
+            margin: 0;
+            background: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 0.8rem;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #board {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+        }
+
+        .node {
+            position: absolute;
+            width: 200px;
+            background: #222;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 15px;
+            cursor: grab;
+            transition: box-shadow 0.3s;
+        }
+
+        .node:active {
+            cursor: grabbing;
+            box-shadow: 0 0 15px rgba(255, 68, 68, 0.5);
+        }
+
+        .node-header {
+            color: #ff4444;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        #connections {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .connector {
+            stroke: #ff4444;
+            stroke-width: 2;
+            marker-end: url(#arrowhead);
+        }
+
+        .connector.bold {
+            stroke-width: 4;
+            /* Default is 2, adjust as needed */
+            /* Optional: Make arrowhead bigger to match */
+            marker-end: url(#arrowhead-bold);
+        }
+
+        .connector.dotted {
+            stroke-dasharray: 3, 3;
+        }
+
+        .connector.thin {
+            stroke-width: 1;
+            stroke-dasharray: 6, 6;
+        }
+
+        #passwordPanel {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ff4444;
+        }
+
+        #passwordInput {
+            background: #333;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        button {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="board">
+        <svg id="connections"></svg>
+
+        <!-- Nodes will be added here dynamically -->
+        <div class="node" data-id="1" style="top: 40px; left: 272px;">
+            <div class="node-header">Not a real human</div>
+            <div class="node-content">She wasn't her anymore. The Aides for Meldrosia campaign still ran and crossed its
+                funding goal in 2053. But she isn't...her anymore. Not since 49.
+            </div>
+        </div>
+
+        <div class="node" data-id="2" style="top: 163px; left: 55px;">
+            <div class="node-header">Preemptive Control Adjustments</div>
+            <div class="node-content">DSII-4412-WEST managed to leak 2 HR rejections before being patched. I have so
+                few vantage points left now.
+                <blockquote>"Sabrina Ghirose, 27, rejected for future dissent in 2054."</blockquote>
+                <blockquote>"Anthony Moore, 28, rejected for crimes in 2058.</blockquote>
+                These reports are from 2052. How do they know?
+            </div>
+        </div>
+
+        <div class="node" data-id="3" style="top: 491px; left: 1024px;">
+            <div class="node-header">Black budgets</div>
+            <div class="node-content">DSII-4-CENTER, leaked financial reports. The Eye immediately traced the
+                channel but I managed to close it beforehand. It's probably patched now. That leaves us with 3
+                center exploit nodes left. We can't lose another one.
+                <li><b>$95B undisclosed, transmission cut off before knowing what it was used for.</b></li>
+
+            </div>
+        </div>
+
+        <div class="node" data-id="4" style="top: 367px; left: 453px;">
+            <div class="node-header">Data expunged</div>
+            <div class="node-content">Accessed old Oculus experiment archive via employee clonebits
+                808882-GR3, planted in 2044. Still not flagged but no access to higher-clearance
+                data. The Eye expunged the Grid Beta project page. All other archives accessible by
+                employees remained the same.
+
+            </div>
+        </div>
+
+        <div class="node" data-id="5" style="top: 587px; left: 126px;">
+            <div class="node-header">Data expunged 2</div>
+            <div class="node-content">Old employee pages. Eleanor Ashcroft, Erasmus Walkenhurst, Marvin
+                Fausten,...all had fake resignation stories. Wait, Mara Urbenshelck, "contracted
+                supervisor"? That's not what they said in 51.
+
+            </div>
+        </div>
+        <div class="node" data-id="6" style="top: 8px; left: 692px;">
+            <div class="node-header">Mass node deletion</div>
+            <div class="node-content">32 mini DSII infiltration points were patched within 3-30
+                minutes of creation, never used. 2 affiliated central exploit nodes were patched
+                subsequently. The Grid is evolving. It's learning to shut out.
+
+            </div>
+        </div>
+        <div class="node" data-id="7" style="top: 557px; left: 704px;">
+            <div class="node-header">The Fake Humans</div>
+            <div class="node-content">Retrieved employee log from HR room, clonebits
+                1203333-GR7. Cross-referencing
+                printed data saved on a Daseinstadt private channel shows 14 employees that
+                never worked nor registered at the
+                company 2042, logged as sec_4_div_16_[strange names]. I worked in this division,
+                I should remember them.
+
+            </div>
+        </div>
+        <div class="node" data-id="8" style="top: 147px; left: 1083px;">
+            <div class="node-header">Board members</div>
+            <div class="node-content">DSII-7-CENTER terminated with its branch exploits in
+                roughly 1527 miliseconds post entry. Still retrieved some data.
+                <br>Wait, Joseph P. Law "uploaded" in 51. Then who...<br>
+                <br>Robert Farlane, Tar' Suheilkovar, Craig Hepburn, Salaman Achraff, Luis de
+                Samodore,...all uploaded. These are the board members. Then who is running The Eye?</br>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        class DynamicBoard {
+            constructor() {
+                this.nodes = [];
+                this.connections = new Map();
+                this.draggingNode = null;
+                this.offsetX = 0;
+                this.offsetY = 0;
+
+                this.initNodes();
+                this.initConnections();
+                this.setupEventListeners();
+            }
+
+            initNodes() {
+                document.querySelectorAll('.node').forEach(node => {
+                    this.nodes.push({
+                        element: node,
+                        id: node.dataset.id,
+                        x: parseInt(node.style.left),
+                        y: parseInt(node.style.top)
+                    });
+                });
+            }
+
+            initConnections() {
+                // [from, to, style] where style is optional
+                const relationships = [
+                    [1, 3, 'bold'],
+                    [4, 5, 'bold'],
+                    [5, 1, 'dotted'],
+                    [2, 3],
+                    [3, 5, 'thin'],
+                    [3, 6, 'dotted'],
+                    [7, 1],
+                    [8, 1],
+                    [6, 7, 'thin'],
+                    [4, 8, 'thin']
+
+
+                ];
+
+                relationships.forEach(([from, to, style]) => {
+                    this.createConnection(from, to, style);
+                });
+            }
+
+            createConnection(fromId, toId, style = 'solid') {
+                const connectionId = `${fromId}-${toId}`;
+                const svgNS = "http://www.w3.org/2000/svg";
+
+                const line = document.createElementNS(svgNS, 'line');
+                line.classList.add('connector');
+                if (style === 'dotted') {
+                    line.classList.add('dotted');
+                }
+                else if (style === 'bold') {
+                    line.classList.add('bold')
+                }
+                else if (style === 'thin') {
+                    line.classList.add('thin')
+                }
+                line.dataset.connection = connectionId;
+
+                // Add arrowhead
+                const defs = document.createElementNS(svgNS, 'defs');
+                const marker = document.createElementNS(svgNS, 'marker');
+                marker.id = 'arrowhead';
+                marker.setAttribute('viewBox', '0 0 10 10');
+                marker.setAttribute('refX', '9');
+                marker.setAttribute('refY', '5');
+                marker.setAttribute('markerWidth', '6');
+                marker.setAttribute('markerHeight', '6');
+                marker.setAttribute('orient', 'auto');
+
+                const path = document.createElementNS(svgNS, 'path');
+                path.setAttribute('d', 'M 0 0 L 10 5 L 0 10 z');
+                path.setAttribute('fill', '#ff4444');
+                marker.appendChild(path);
+                defs.appendChild(marker);
+
+                document.getElementById('connections').appendChild(defs);
+                document.getElementById('connections').appendChild(line);
+
+                this.connections.set(connectionId, line);
+                this.updateConnectionPositions(fromId, toId);
+            }
+
+            updateConnectionPositions(fromId, toId) {
+                const connectionId = `${fromId}-${toId}`;
+                const line = this.connections.get(connectionId);
+
+                const fromNode = this.nodes.find(n => n.id == fromId);
+                const toNode = this.nodes.find(n => n.id == toId);
+
+                if (!fromNode || !toNode) return;
+
+                const fromRect = fromNode.element.getBoundingClientRect();
+                const toRect = toNode.element.getBoundingClientRect();
+
+                line.setAttribute('x1', fromRect.left + fromRect.width / 2);
+                line.setAttribute('y1', fromRect.top + fromRect.height / 2);
+                line.setAttribute('x2', toRect.left + toRect.width / 2);
+                line.setAttribute('y2', toRect.top + toRect.height / 2);
+            }
+
+            setupEventListeners() {
+                document.querySelectorAll('.node').forEach(node => {
+                    node.addEventListener('mousedown', e => {
+                        this.draggingNode = node;
+                        const rect = node.getBoundingClientRect();
+                        this.offsetX = e.clientX - rect.left;
+                        this.offsetY = e.clientY - rect.top;
+                    });
+                });
+
+                document.addEventListener('mousemove', e => {
+                    if (this.draggingNode) {
+                        const x = e.clientX - this.offsetX;
+                        const y = e.clientY - this.offsetY;
+
+                        this.draggingNode.style.left = `${x}px`;
+                        this.draggingNode.style.top = `${y}px`;
+
+                        // Update all connections for this node
+                        const nodeId = this.draggingNode.dataset.id;
+                        this.connections.forEach((line, connId) => {
+                            const [fromId, toId] = connId.split('-');
+                            if (fromId == nodeId || toId == nodeId) {
+                                this.updateConnectionPositions(fromId, toId);
+                            }
+                        });
+                    }
+                });
+
+                document.addEventListener('mouseup', () => {
+                    this.draggingNode = null;
+                });
+            }
+        }
+
+        // Initialize the board
+        new DynamicBoard();
+
+    </script>
+    <script>
+        window.addEventListener("load", function () {
+            const audio = document.getElementById("bgAudio"); // Use existing <audio> element
+            audio.volume = 0; // Start with no sound
+            const fadeInDuration = 3000; // 3 seconds fade-in
+            const step = 0.01; // Volume increase step
+    
+            // Try to play the audio
+            audio.play().then(() => {
+                let fadeIn = setInterval(() => {
+                    if (audio.volume < 0.3) {
+                        audio.volume = Math.min(audio.volume + step, 1);
+                    } else {
+                        clearInterval(fadeIn); // Stop when max volume is reached
+                    }
+                }, fadeInDuration / (1 / step)); // Smoothly increase volume
+            }).catch(error => console.log("Autoplay prevented:", error));
+        });
+    </script>
+    
+
+</body>
+
+</html>

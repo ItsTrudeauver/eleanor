@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/journals.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="public/about.html">About</a></li>
+            <li><a href="../investigations/case_dashboard.html">Investigations</a></li>
+            <li><a href="/journal/journal_dashboard.html">Journal</a></li>
+            <li><a href="/public/archives.html">Research Archive</a></li>
+            <li><a href="/viewing/contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header with Dark Mode Toggle -->
+        <header>
+            <h1>Journals</h1>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+        </header>
+
+        <!-- Journal Tabs Container -->
+        <div class="journal-tabs-container">
+            <a href="journal8.html" class="journal-tab">
+                <div class="journal-header">
+                    <h3 class="journal-title">WKO Rebellion Failed</h3>
+                    <span class="journal-year">2054</span>
+                </div>
+                <p class="journal-preview">Well, I saw it coming. Kind of. Maybe I should have gone to warn them. But that'll draw The Eye to me.</p>
+            </a>
+
+            <a href="journal7.html" class="journal-tab">
+                <div class="journal-header">
+                    <h3 class="journal-title">Impossible</h3>
+                    <span class="journal-year">2054</span>
+                </div>
+                <p class="journal-preview">Erasmus?</p>
+            </a>
+
+            <a href="journal6.html" class="journal-tab">
+                <div class="journal-header">
+                    <h3 class="journal-title">Endroning of pets & wild non-aggressive animals</h3>
+                    <span class="journal-year">2053</span>
+                </div>
+                <p class="journal-preview">And people just let them??</p>
+            </a>
+
+            <a href="journal5.html" class="journal-tab">
+                <div class="journal-header">
+                    <h3 class="journal-title">Rebellion?</h3>
+                    <span class="journal-year">2052</span>
+                </div>
+                <p class="journal-preview">A group called the White Knight is apparently on the rise.</p>
+            </a>
+
+            <a href="journal4.html" class="journal-tab">
+                <div class="journal-header">
+                    <h3 class="journal-title">New development from The Eye's official announcements</h3>
+                    <span class="journal-year">2051</span>
+                </div>
+                <p class="journal-preview">Potential control spycams</p>
+            </a>
+
+            <a href="journal3.html" class="journal-tab">
+                <div class="journal-header">
+                    <h3 class="journal-title">Oculus rebranding & corporate heads disappearances</h3>
+                    <span class="journal-year">2051</span>
+                </div>
+                <p class="journal-preview">This is just too strange.</p>
+            </a>
+
+            <a href="journal2.html" class="journal-tab">
+                <div class="journal-header">
+                    <h3 class="journal-title">Clonebits 90000999-GR17 900099-GR13 </h3>
+                    <span class="journal-year">2049-2050</span>
+                </div>
+                <p class="journal-preview">Information leaks from old access employee accounts before both got corrupted (?) and purged</p>
+            </a>
+
+
+            <!-- Journal Entry 1 -->
+            <a href="journal1.html" class="journal-tab">
+                <div class="journal-header">
+                    <h3 class="journal-title">Hospital visit</h3>
+                    <span class="journal-year">2049</span>
+                </div>
+                <p class="journal-preview">Saw mom</p>
+            </a>            
+        </div>
+    </div>
+
+
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Load saved theme
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            body.classList.add(currentTheme);
+            darkModeToggle.checked = currentTheme === 'dark-mode';
+        }
+
+        // Toggle theme
+        darkModeToggle.addEventListener('change', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark-mode' : '');
+        });
+    </script>
+</body>
+</html>

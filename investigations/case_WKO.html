@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <audio id="bgAudio" autoplay loop hidden>
+        <source src="/assets/audio/cases/CURSE by Mehul Sharma.mp3" type="audio/mpeg">
+    </audio>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Board</title>
+    <style>
+        body {
+            margin: 0;
+            background: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 0.8rem;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #board {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+        }
+
+        .node {
+            position: absolute;
+            width: 200px;
+            background: #222;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 15px;
+            cursor: grab;
+            transition: box-shadow 0.3s;
+        }
+
+        .node:active {
+            cursor: grabbing;
+            box-shadow: 0 0 15px rgba(255, 68, 68, 0.5);
+        }
+
+        .node-header {
+            color: #ff4444;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        #connections {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .connector {
+            stroke: #ff4444;
+            stroke-width: 2;
+            marker-end: url(#arrowhead);
+        }
+
+        .connector.bold {
+            stroke-width: 4;
+            /* Default is 2, adjust as needed */
+            /* Optional: Make arrowhead bigger to match */
+            marker-end: url(#arrowhead-bold);
+        }
+
+        .connector.dotted {
+            stroke-dasharray: 3, 3;
+        }
+
+        .connector.thin {
+            stroke-width: 1;
+            stroke-dasharray: 6, 6;
+        }
+
+        #passwordPanel {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ff4444;
+        }
+
+        #passwordInput {
+            background: #333;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        button {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="board">
+        <svg id="connections"></svg>
+
+        <!-- Nodes will be added here dynamically -->
+        <div class="node" data-id="1" style="top: 96px; left: 247px;">
+            <div class="node-header">Recruitment patterns</div>
+            <div class="node-content">Independent reports into WKO revealed some strange recruitment trends. Pretty
+                silent in
+                the years leading to 2051, and then got a lot more attention than a fringe group should have</div>
+        </div>
+        <div class="node" data-id="2" style="top: 318px; left: 481px;">
+            <div class="node-header">Ad activities</div>
+            <div class="node-content">Aggressive advertisement campaigns with strong messages during 48-51. Marketing
+                experts call it the Advertsunami (terrible name?). Some common phrases from sample data logged by the
+                Daseinstadt server in Germany.
+                <li>The time is now</li>
+                <li>You will be the change</li>
+                <li>Take matters to your own hands</li>
+            </div>
+        </div>
+        <div class="node" data-id="3" style="top: 589px; left: 272px;">
+            <div class="node-header">Too clean?</div>
+            <div class="node-content"> Given the military backing behind The Eye, I could figure why they slammed the
+                rebellion down so quickly. Still, the entire thing was too spotless for a sizeable conflict.
+            </div>
+        </div>
+        <div class="node" data-id="4" style="top: 280px; left: 804px; width: 250px; ">
+            <div class="node-header">Odd conflict policies</div>
+            <div class="node-content">
+                The Eye fired Fausten pretty much spontaneously when the first military contract batch came. Rasmus
+                probably got his bum kicked out
+                due to dissent too. Didn't press charges against WKO. A cover up? Or something else?
+            </div>
+        </div>
+
+        <div class="node" data-id="5" style="top: 519px; left: 654px;">
+            <div class="node-header">Black market retrievals</div>
+            <div class="node-content">
+                <li>Weapon models that do not have any known manufacturers</li>
+                <li>Financial market insider-trading leaks reveal turbulent activities in the insurance sector leading
+                    to the rebel</li>
+                <li>CIUPA collective investment networth spiked per informant</li>
+                Coincidence? Needs comparative analyses with other trends.
+            </div>
+        </div>
+
+        <div class="node" data-id="6" style="top: 64px; left: 934px;">
+            <div class="node-header">Traffic Reports</div>
+            <div class="node-content">
+                May 21st 2054, traffic dust density 49% lower than average expected range per reports from the ENSA.
+                Even holiday seasons don't have this effect.
+            </div>
+        </div>
+        <div class="node" data-id="7" style="top: 528px; left: 1115px;">
+            <div class="node-header">Urban planning</div>
+            <div class="node-content">
+                May 14th 2054, 26 major road maintenance project carried out at once from members of the CIUPA.
+                Unprecedented.
+            </div>
+            <div class="node" data-id="8" style="top: 528px; left: 1115px;">
+                <div class="node-header">Recruitment cluster</div>
+                <div class="node-content">
+                    Public records of detained rioters. New Pelinton, Arvine, Messanova,...all heavily industrialized
+                    district contributed significant personnel for WKO.
+                </div>
+
+
+
+
+
+            </div>
+
+            <script>
+                class DynamicBoard {
+                    constructor() {
+                        this.nodes = [];
+                        this.connections = new Map();
+                        this.draggingNode = null;
+                        this.offsetX = 0;
+                        this.offsetY = 0;
+
+                        this.initNodes();
+                        this.initConnections();
+                        this.setupEventListeners();
+                    }
+
+                    initNodes() {
+                        document.querySelectorAll('.node').forEach(node => {
+                            this.nodes.push({
+                                element: node,
+                                id: node.dataset.id,
+                                x: parseInt(node.style.left),
+                                y: parseInt(node.style.top)
+                            });
+                        });
+                    }
+
+                    initConnections() {
+                        // [from, to, style] where style is optional
+                        const relationships = [
+                            [7, 3, 'dotted'],  // This will be dotted
+                            [3, 4],            // Default solid
+                            [7, 5, 'dotted'],
+                            [4, 6, 'dotted'],
+                            [2, 1, 'bold'],
+                            [6, 7, 'bold'],
+                            [5, 3, 'dotted'],
+                            [7, 1, 'thin'],
+                            [5, 2, 'thin'],
+                            [6, 2, 'thin']
+
+                        ];
+
+                        relationships.forEach(([from, to, style]) => {
+                            this.createConnection(from, to, style);
+                        });
+                    }
+
+                    createConnection(fromId, toId, style = 'solid') {
+                        const connectionId = `${fromId}-${toId}`;
+                        const svgNS = "http://www.w3.org/2000/svg";
+
+                        const line = document.createElementNS(svgNS, 'line');
+                        line.classList.add('connector');
+                        if (style === 'dotted') {
+                            line.classList.add('dotted');
+                        }
+                        else if (style === 'bold') {
+                            line.classList.add('bold')
+                        }
+                        else if (style === 'thin') {
+                            line.classList.add('thin')
+                        }
+                        line.dataset.connection = connectionId;
+
+                        // Add arrowhead
+                        const defs = document.createElementNS(svgNS, 'defs');
+                        const marker = document.createElementNS(svgNS, 'marker');
+                        marker.id = 'arrowhead';
+                        marker.setAttribute('viewBox', '0 0 10 10');
+                        marker.setAttribute('refX', '9');
+                        marker.setAttribute('refY', '5');
+                        marker.setAttribute('markerWidth', '6');
+                        marker.setAttribute('markerHeight', '6');
+                        marker.setAttribute('orient', 'auto');
+
+                        const path = document.createElementNS(svgNS, 'path');
+                        path.setAttribute('d', 'M 0 0 L 10 5 L 0 10 z');
+                        path.setAttribute('fill', '#ff4444');
+                        marker.appendChild(path);
+                        defs.appendChild(marker);
+
+                        document.getElementById('connections').appendChild(defs);
+                        document.getElementById('connections').appendChild(line);
+
+                        this.connections.set(connectionId, line);
+                        this.updateConnectionPositions(fromId, toId);
+                    }
+
+                    updateConnectionPositions(fromId, toId) {
+                        const connectionId = `${fromId}-${toId}`;
+                        const line = this.connections.get(connectionId);
+
+                        const fromNode = this.nodes.find(n => n.id == fromId);
+                        const toNode = this.nodes.find(n => n.id == toId);
+
+                        if (!fromNode || !toNode) return;
+
+                        const fromRect = fromNode.element.getBoundingClientRect();
+                        const toRect = toNode.element.getBoundingClientRect();
+
+                        line.setAttribute('x1', fromRect.left + fromRect.width / 2);
+                        line.setAttribute('y1', fromRect.top + fromRect.height / 2);
+                        line.setAttribute('x2', toRect.left + toRect.width / 2);
+                        line.setAttribute('y2', toRect.top + toRect.height / 2);
+                    }
+
+                    setupEventListeners() {
+                        document.querySelectorAll('.node').forEach(node => {
+                            node.addEventListener('mousedown', e => {
+                                this.draggingNode = node;
+                                const rect = node.getBoundingClientRect();
+                                this.offsetX = e.clientX - rect.left;
+                                this.offsetY = e.clientY - rect.top;
+                            });
+                        });
+
+                        document.addEventListener('mousemove', e => {
+                            if (this.draggingNode) {
+                                const x = e.clientX - this.offsetX;
+                                const y = e.clientY - this.offsetY;
+
+                                this.draggingNode.style.left = `${x}px`;
+                                this.draggingNode.style.top = `${y}px`;
+
+                                // Update all connections for this node
+                                const nodeId = this.draggingNode.dataset.id;
+                                this.connections.forEach((line, connId) => {
+                                    const [fromId, toId] = connId.split('-');
+                                    if (fromId == nodeId || toId == nodeId) {
+                                        this.updateConnectionPositions(fromId, toId);
+                                    }
+                                });
+                            }
+                        });
+
+                        document.addEventListener('mouseup', () => {
+                            this.draggingNode = null;
+                        });
+                    }
+                }
+
+                // Initialize the board
+                new DynamicBoard();
+
+            </script>
+            <script>
+                window.addEventListener("load", function () {
+                    const audio = document.getElementById("bgAudio"); // Use existing <audio> element
+                    audio.volume = 0; // Start with no sound
+                    const fadeInDuration = 3000; // 3 seconds fade-in
+                    const step = 0.01; // Volume increase step
+            
+                    // Try to play the audio
+                    audio.play().then(() => {
+                        let fadeIn = setInterval(() => {
+                            if (audio.volume < 0.3) {
+                                audio.volume = Math.min(audio.volume + step, 1);
+                            } else {
+                                clearInterval(fadeIn); // Stop when max volume is reached
+                            }
+                        }, fadeInDuration / (1 / step)); // Smoothly increase volume
+                    }).catch(error => console.log("Autoplay prevented:", error));
+                });
+            </script>
+            
+
+</body>
+
+</html>

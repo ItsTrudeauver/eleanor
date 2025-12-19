@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tragic Youth 55 - Retro Forum</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: "Courier New", Courier, monospace;
+            background: linear-gradient(to bottom, #b0e0e6, #add8e6);
+            color: #000;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout */
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 200px;
+            background: linear-gradient(to bottom, #d0ebff, #a0d0ff);
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+            border-right: 1px solid #6699cc;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2em;
+            margin-top: 0;
+            text-align: center;
+            border-bottom: 1px solid #6699cc;
+            padding-bottom: 5px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin: 10px 0;
+            padding: 5px;
+            background: linear-gradient(to right, #cce6ff, #b3d9ff);
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 0 #fff;
+            cursor: pointer;
+        }
+
+        .sidebar li:hover {
+            background: linear-gradient(to right, #d9ecff, #cce6ff);
+        }
+
+        /* Main Content Area */
+        .content {
+            flex: 1;
+            padding: 20px;
+            background: #e6f7ff;
+            position: relative;
+            transition: margin-right 0.3s;
+        }
+
+        /* Forum Header */
+        .forum-header {
+            text-align: center;
+            background: linear-gradient(to bottom, #80d4ff, #33adff);
+            padding: 20px;
+            border: 2px solid #3399ff;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .forum-header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .forum-header p {
+            margin: 5px 0 0 0;
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        /* Search Container */
+        .search-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .search-container input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #6699cc;
+            border-radius: 3px;
+            font-family: inherit;
+        }
+
+        .search-container button {
+            background: linear-gradient(to bottom, #fff, #cce6ff);
+            border: 1px solid #6699cc;
+            padding: 8px 15px;
+            margin-left: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+            font-family: inherit;
+        }
+
+        .search-container button:hover {
+            background: linear-gradient(to bottom, #e6f7ff, #b3d9ff);
+        }
+
+        /* Sort Button */
+        .sort-btn {
+            background: linear-gradient(to bottom, #fff, #cce6ff);
+            border: 1px solid #6699cc;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+            font-family: inherit;
+        }
+
+        .sort-btn:hover {
+            background: linear-gradient(to bottom, #e6f7ff, #b3d9ff);
+        }
+
+        /* Post Styles */
+        .post {
+            background: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
+            border: 1px solid #99ccee;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .post-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #003366;
+        }
+
+        .post-header {
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            color: #336699;
+        }
+
+        .post-content {
+            margin: 5px 0 10px 0;
+            white-space: pre-wrap;
+        }
+
+        /* Reaction Section */
+        .reactions {
+            margin-top: 10px;
+        }
+
+        .reaction-btn {
+            background: linear-gradient(to bottom, #fff, #cce6ff);
+            border: 1px solid #6699cc;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.9em;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+            font-family: inherit;
+        }
+
+        .reaction-btn:hover {
+            background: linear-gradient(to bottom, #e6f7ff, #b3d9ff);
+        }
+
+        .reaction-count {
+            margin-left: 3px;
+            font-weight: bold;
+        }
+
+        /* Collapsible Comments Toggle */
+        .comments-toggle {
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: #0066cc;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Comment Styles */
+        .comments {
+            margin-left: 20px;
+            border-left: 2px dotted #99ccee;
+            padding-left: 10px;
+        }
+
+        .comment {
+            margin-top: 10px;
+            padding: 5px;
+            background: #fff;
+            border: 1px solid #99ccee;
+            border-radius: 3px;
+        }
+
+        .comment-header {
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 3px;
+            color: #336699;
+        }
+
+        /* Pagination Controls */
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            background: linear-gradient(to bottom, #fff, #cce6ff);
+            border: 1px solid #6699cc;
+            padding: 5px 10px;
+            margin: 0 3px;
+            cursor: pointer;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+            font-family: inherit;
+        }
+
+        .pagination button:hover {
+            background: linear-gradient(to bottom, #e6f7ff, #b3d9ff);
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: default;
+        }
+
+        .pagination button.active {
+            background: linear-gradient(to bottom, #99ccff, #66b2ff);
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Members Panel (hidden by default, slides in from right) */
+        #members-panel {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background: linear-gradient(to bottom, #d0ebff, #a0d0ff);
+            border-left: 1px solid #6699cc;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+            transition: right 0.3s;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+
+        #members-panel.active {
+            right: 0;
+        }
+
+        #members-panel h2 {
+            text-align: center;
+            font-size: 1.4em;
+            margin-top: 0;
+            border-bottom: 1px solid #6699cc;
+            padding-bottom: 10px;
+            color: #003366;
+        }
+
+        .member-group {
+            margin-bottom: 20px;
+        }
+
+        .member-group h3 {
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+            color: #336699;
+            border-bottom: 1px solid #6699cc;
+            padding-bottom: 3px;
+        }
+
+        .member-group ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        .member-group li {
+            margin: 5px 0;
+            padding: 3px 5px;
+            background: linear-gradient(to right, #cce6ff, #b3d9ff);
+            border-radius: 3px;
+            font-size: 0.95em;
+        }
+
+        /* Close Button for Members Panel */
+        #close-members {
+            display: block;
+            text-align: right;
+            font-weight: bold;
+            cursor: pointer;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar with side tabs -->
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li onclick="showForum()">Forum Home</li>
+                <li onclick="toggleMembersPanel()">Members</li>
+                <li onclick="showArchives()">Archives</li>
+                <li>Signing up is currently unavailable.</li>
+
+            </ul>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content" id="main-content">
+            <!-- Forum view (header, search, sort, posts, and pagination) -->
+            <div id="forum-view">
+                <div class="forum-header">
+                    <h1>Tragic Youth 55</h1>
+                    <p>Some dumbass botted the polls for the site name. You live with this now.</p>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search posts..." />
+                    <button id="search-button">Search</button>
+                    <button id="clear-search-button">Clear Search</button>
+                </div>
+                <button class="sort-btn" id="sort-button">Sort by Date (Oldest to Newest)</button>
+                <div id="posts-container"></div>
+                <div class="pagination" id="pagination-controls"></div>
+            </div>
+        </div>
+
+        <!-- Members Panel -->
+        <div id="members-panel">
+            <span id="close-members" onclick="toggleMembersPanel()">[Close]</span>
+            <h2>Members</h2>
+            <div class="member-group">
+                <h3>Admins</h3>
+                <ul>
+                    <li>Memphis</li>
+
+                </ul>
+            </div>
+            <div class="member-group">
+                <h3>Mods</h3>
+                <ul>
+                    <li>mod-archivist</li>
+                    <li>mod-krugg1122</li>
+                </ul>
+            </div>
+            <div class="member-group">
+                <h3>Senior Members</h3>
+                <ul>
+                    <li>gravy-12</li>
+                    <li>oknoone</li>
+                    <li>dfgwhha</li>
+                    <li>madeleine</li>
+                    <li>surf_cs</li>
+                </ul>
+            </div>
+            <div class="member-group">
+                <h3>Junior Members</h3>
+                <ul>
+                    <li>SanderJ</li>
+                    <li>NorwagerNext</li>
+                    <li>gregg-gegger</li>
+                    <li>curtisaok</li>
+                    <li>cbdzv</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /***********************
+         * POSTS, SORT, SEARCH, PAGINATION
+         ***********************/
+        const postsData = [
+            {
+                id: 1,
+                title: "Just got fleeced at LRL. What now?",
+                author: "gregg-gegger",
+                date: "2057-01-25 10:00",
+                content: "Some rat broke into my storage and nabbed everything. Anybody got a clue? I need to bounce back rq.",
+                reactions: { lmfao: 27, getGood: 13, fedSpotted: 0, shhhh: 0, like: 2 },
+                comments: [
+                    {
+                        id: 11,
+                        author: "Memphis",
+                        date: "2057-01-25 10:15",
+                        content: "Rule #1, split-your-shit dumbass",
+                        replies: [
+                            {
+                                id: 111,
+                                author: "gregg-gegger",
+                                date: "2057-01-25 10:22",
+                                content: "Any way I can track them down?",
+                                replies: [
+                                    {
+                                        id: 1111,
+                                        author: "Memphis",
+                                        date: "2057-01-25 10:25",
+                                        content: "Nobody knows who took your stash. Its over.",
+                                        replies: [
+                                            {
+                                                id: 11111,
+                                                author: "gregg-gegger",
+                                                date: "2057-01-25 10:27",
+                                                content: "So what, just take the L?",
+                                                replies: [
+                                                    {
+                                                        id: 11111,
+                                                        author: "Memphis",
+                                                        date: "2057-01-25 10:30",
+                                                        content: "Fuck else can you do. Camp the garbage stalls if you got anything you wanna get back."
+                                                    }
+
+                                                ]
+                                            },
+                                        ]
+                                    },
+
+
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 12,
+                        author: "gravy-12",
+                        date: "2057-01-25 10:20",
+                        content: "lol you new here?",
+                        replies: []
+                    },
+                    {
+                        id: 13,
+                        author: "madeleine",
+                        date: "2057-01-25 10:22",
+                        content: "50 bucks and I'll tell you if the guy who robbed you is still around",
+                        replies: []
+                    },
+                    {
+                        id: 14,
+                        author: "oknoone",
+                        date: "2057-01-25 10:22",
+                        content: "just cop something and scam another newbie for cash lmao bouncing back is easy if you know where to look",
+                        replies: []
+                    },
+                    {
+                        id: 15,
+                        author: "gregg-gegger",
+                        date: "2057-01-25 10:32",
+                        content: "this place is fucking hell",
+                        replies: [
+                            {
+                                id: 13,
+                                author: "madeleine",
+                                date: "2057-01-25 10:37",
+                                content: "lmfao welcome to Norwager",
+                                replies: []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 2,
+                title: "almost got jumped at the overpass",
+                author: "cbdzv",
+                date: "2055-04-16 21:37",
+                content: "was cutting through to get to the lot, two guys stepped out like they owned the damn place. baton and pipe, just went straight for me. bolted before they could get close",
+                reactions: { lmfao: 0, getGood: 10, fedSpotted: 0, shhhh: 0, like: 8 },
+                comments: [
+                    {
+                        id: 21,
+                        author: "dfgwhha",
+                        date: "2055-04-16 21:44",
+                        content: "that place aint safe at night. you new here?",
+                        replies: [
+                            {
+                                id: 21,
+                                author: "cbdzv",
+                                date: "2055-04-16 21:47",
+                                content: "nah. just taking on a different route",
+                                replies: [
+                                    {
+                                        id: 21,
+                                        author: "dfgwhha",
+                                        date: "2055-04-16 21:50",
+                                        content: "you lucky. some never get to post about it",
+                                        replies: []
+                                    },
+                                    {
+                                        id: 21,
+                                        author: "oknoone",
+                                        date: "2055-04-16 21:58",
+                                        content: "shoulda at least kick one in the jaw before running. gotta send a message",
+                                        replies: [
+                                            {
+                                                id: 21,
+                                                author: "cbdzv",
+                                                date: "2055-04-16 22:03",
+                                                content: "yep, lemme just take on 2 dudes with a can of coffee and a bad knee.",
+                                                replies: [
+                                                    {
+                                                        id: 21,
+                                                        author: "Memphis",
+                                                        date: "2055-04-16 22:06",
+                                                        content: "shoulda come by & get a gun",
+                                                        replies: []
+                                                    }
+                                                ]
+                                            },
+                                        ]
+                                    },
+
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 3,
+                title: "whats under the concrete rise",
+                author: "curtisaok",
+                date: "2056-03-15 17:33",
+                content: "tell me im not crazy, but i went to back porch to get some new rig and i swear i saw the damn rise move. been here 6 months, first time seeing that shit",
+                reactions: { lmfao: 2, getGood: 0, fedSpotted: 0, shhhh: 4, like: 6 },
+                comments: [
+                    {
+                        id: 13,
+                        author: "oknoone",
+                        date: "2056-03-15 17:39",
+                        content: "you dont wanna know",
+                        replies: [
+                            {
+                                id: 13,
+                                author: "curtisaok",
+                                date: "2056-03-15 17:44",
+                                content: "someone gotta know",
+                                replies: [
+                                    {
+                                        id: 13,
+                                        author: "oknoone",
+                                        date: "2056-03-15 17:51",
+                                        content: "theres tunnels. maybe old drainage or escape routes. some go deeper. some dont have bottoms",
+                                        replies: [
+                                            {
+                                                id: 13,
+                                                author: "curtisaok",
+                                                date: "2056-03-15 18:00",
+                                                content: "bro what",
+                                                replies: []
+                                            },
+                                            {
+                                                id: 13,
+                                                author: "dfgwhha",
+                                                date: "2056-03-15 18:04",
+                                                content: "bro what",
+                                                replies: []
+                                            },
+                                            {
+                                                id: 13,
+                                                author: "Memphis",
+                                                date: "2056-03-15 18:08",
+                                                content: "bro what",
+                                                replies: []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 13,
+                        author: "mod-krugg1122",
+                        date: "2056-03-15 18:18",
+                        content: "dont dig bro you're gonna disappear next time you at the rise",
+                        replies: [
+                            {
+                                id: 13,
+                                author: "curtisaok",
+                                date: "2056-03-15 18:21",
+                                content: "aint seen nothing aint heard nothing",
+                                replies: []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: "who actually owns the chipped paint pub",
+                author: "matissier0",
+                date: "2055-09-05 12:13",
+                content: "been going there for years. seen a few bartenders. never the owner. so who runs the place",
+                reactions: { lmfao: 0, getGood: 0, fedSpotted: 0, shhhh: 24, like: 16 },
+                comments: [
+                    {
+                        id: 41,
+                        author: '6y5t',
+                        date: '2055-09-05 12:25',
+                        content: "best guess is nobody",
+                    },
+                    {
+                        id: 41,
+                        author: 'gravy-12',
+                        date: '2055-09-05 12:35',
+                        content: "or someone who tries to stay a ghost.",
+                    },
+                    {
+                        id: 41,
+                        author: 'oknoone',
+                        date: '2055-09-05 12:41',
+                        content: "theory is that its a front for something. last few guys who digged too much stopped asking",
+                    },
+                    {
+                        id: 41,
+                        author: 'Memphis',
+                        date: '2055-09-05 12:49',
+                        content: "just let it go, aint worth your life",
+                    },
+                    {
+                        id: 41,
+                        author: 'matissier0',
+                        date: '2055-09-05 13:01',
+                        content: "cool cool cool, never asking again.",
+                    },
+                ]
+            },
+            {
+                id: 5,
+                title: "fuck is wrong with the bus in Ashway",
+                author: "sorlathan",
+                date: '2055-17-07 20:11',
+                content: "been taking the late bus for a few weeks. same route, same time. last night driver looked at me and just kept going. wasted my damn time. anyone knows what's up??",
+                reactions: { lmfao: 3, getGood: 0, fedSpotted: 0, shhhh: 4, like: 7 },
+                comments: [
+                    {
+                        id: 51,
+                        author: "scopeoll",
+                        date: '2055-17-07 20:17',
+                        content: "Oh you saw it huh.",
+                        replies: [
+                            {
+                                id: 51,
+                                author: "sorlathan",
+                                date: '2055-17-07 20:20',
+                                content: "saw what??",
+                                replies: [
+                                    {
+                                        id: 51,
+                                        author: "scopeoll",
+                                        date: '2055-17-07 20:23',
+                                        content: "some nights the bus dont stop. heard someone said some nights they dont even have a driver.",
+                                        replies: [
+                                            {
+                                                id: 51,
+                                                author: "sorlathan",
+                                                date: '2055-17-07 20:28',
+                                                content: "you fucking with me.",
+                                                replies: [
+                                                    {
+                                                        id: 51,
+                                                        author: "jamesonna2",
+                                                        date: '2055-17-07 20:33',
+                                                        content: "nah he serious. saw it too. freaky ass shit.",
+                                                        replies: [
+                                                            {
+                                                                id: 51,
+                                                                author: "sorlathan",
+                                                                date: '2055-17-07 20:44',
+                                                                content: "ok cool so this fucking place is haunted on top of being Norwager",
+                                                                replies: [
+                                                                    {
+                                                                        id: 51,
+                                                                        author: "madeleine",
+                                                                        date: '2055-17-07 20:48',
+                                                                        content: "welcome to town lol.",
+                                                                        replies: [
+
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 6,
+                title: "sirens at golden grove?",
+                author: 'pentskater',
+                date: '2055-17-07 20:11',
+                content: "deadass sounded like something big went down. sirens, trucks, then silece. whole place empty now. WTF??",
+                reactions: { lmfao: 3, getGood: 0, fedSpotted: 0, shhhh: 14, like: 0 },
+                comments: [
+                    {
+                        id: 61,
+                        author: "oknoone",
+                        date: "2055-17-07 20:24",
+                        content: "always some shit happening in GG",
+                        replies: [
+                            {
+                                id: 61,
+                                author: "pentskater",
+                                date: "2055-17-07 20:26",
+                                content: "yeah but they dont roll in that heavy usually",
+                                replies: [
+                                    {
+                                        id: 61,
+                                        author: "parsnips",
+                                        date: "2055-17-07 20:29",
+                                        content: "bet you by morning the people who saw it wont talk about it either.",
+                                        replies: [
+                                            {
+                                                id: 61,
+                                                author: "pentskater",
+                                                date: "2055-17-07 20:32",
+                                                content: "yall saying i should shut up",
+                                                replies: [
+                                                    {
+                                                        id: 61,
+                                                        author: "Memphis",
+                                                        date: "2055-17-07 20:39",
+                                                        content: "we suggesting you let it fade like everyone else does",
+                                                        replies: []
+                                                    },
+                                                    {
+                                                        id: 61,
+                                                        author: "opacity-drive",
+                                                        date: "2055-17-07 20:41",
+                                                        content: "if someone knocks at your door by morning jump through the window and run as fast as you can",
+                                                        replies: []
+                                                    },
+                                                    {
+                                                        id: 61,
+                                                        author: "pentskater",
+                                                        date: "2055-17-07 20:42",
+                                                        content: "stop fucking with me wtf",
+                                                        replies: [
+                                                            {
+                                                                id: 61,
+                                                                author: "madeleine",
+                                                                date: "2055-17-07 20:44",
+                                                                content: "they're right tho, GG is where the power play's at. only thing you're digging is your grave",
+                                                                replies: [
+                                                                    {
+                                                                        id: 61,
+                                                                        author: "pentskater",
+                                                                        date: "2055-17-07 20:50",
+                                                                        content: "aight whatever, aint seen nothing aint heard nothing",
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+
+                ]
+
+            }
+        ]
+
+
+
+        let activePosts = postsData.slice();
+        const postsPerPage = 6;
+        let currentPage = 1;
+        let totalPages = Math.ceil(activePosts.length / postsPerPage);
+        let sortOrder = "asc"; // "asc" = oldest first, "desc" = newest first
+        let recommendedMessage = "";
+
+        function parsePostDate(dateStr) {
+            return new Date(dateStr.replace(" ", "T"));
+        }
+
+        // Render posts including collapsible comments.
+        function renderPosts() {
+            const container = document.getElementById('posts-container');
+            container.innerHTML = "";
+
+            // If a recommended message exists, show it at the top.
+            if (currentPage === 1 && recommendedMessage) {
+                const msgDiv = document.createElement('div');
+                msgDiv.textContent = recommendedMessage;
+                msgDiv.style.fontStyle = "italic";
+                msgDiv.style.marginBottom = "10px";
+                container.appendChild(msgDiv);
+            }
+
+            const startIndex = (currentPage - 1) * postsPerPage;
+            const postsToDisplay = activePosts.slice(startIndex, startIndex + postsPerPage);
+
+            postsToDisplay.forEach(post => {
+                const postDiv = document.createElement('div');
+                postDiv.className = 'post';
+
+                const titleDiv = document.createElement('div');
+                titleDiv.className = 'post-title';
+                titleDiv.textContent = post.title;
+                postDiv.appendChild(titleDiv);
+
+                const headerDiv = document.createElement('div');
+                headerDiv.className = 'post-header';
+                headerDiv.textContent = `${post.author} - ${post.date}`;
+                postDiv.appendChild(headerDiv);
+
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'post-content';
+                contentDiv.textContent = post.content;
+                postDiv.appendChild(contentDiv);
+
+                const reactionsDiv = document.createElement('div');
+                reactionsDiv.className = 'reactions';
+                ["lmfao", "getGood", "fedSpotted", "shhhh", "like"].forEach(type => {
+                    const btn = document.createElement('button');
+                    btn.className = 'reaction-btn';
+                    btn.textContent = type;
+                    const span = document.createElement('span');
+                    span.className = 'reaction-count';
+                    span.textContent = post.reactions[type];
+                    btn.onclick = () => {
+                        post.reactions[type]++;
+                        span.textContent = post.reactions[type];
+                    };
+                    btn.appendChild(span);
+                    reactionsDiv.appendChild(btn);
+                });
+                postDiv.appendChild(reactionsDiv);
+
+                // If comments exist, add a toggle button and collapsible container.
+                if (post.comments && post.comments.length > 0) {
+                    const toggleButton = document.createElement('div');
+                    toggleButton.className = 'comments-toggle';
+                    toggleButton.textContent = "Show Comments";
+                    const commentsDiv = document.createElement('div');
+                    commentsDiv.className = 'comments';
+                    commentsDiv.style.display = "none";
+
+                    post.comments.forEach(comment => {
+                        commentsDiv.appendChild(renderComment(comment));
+                    });
+
+                    toggleButton.onclick = () => {
+                        if (commentsDiv.style.display === "none") {
+                            commentsDiv.style.display = "block";
+                            toggleButton.textContent = "Hide Comments";
+                        } else {
+                            commentsDiv.style.display = "none";
+                            toggleButton.textContent = "Show Comments";
+                        }
+                    };
+
+                    postDiv.appendChild(toggleButton);
+                    postDiv.appendChild(commentsDiv);
+                }
+
+                container.appendChild(postDiv);
+            });
+        }
+
+        function renderComment(comment) {
+            const commentDiv = document.createElement('div');
+            commentDiv.className = 'comment';
+
+            const commentHeader = document.createElement('div');
+            commentHeader.className = 'comment-header';
+            commentHeader.textContent = `${comment.author} - ${comment.date}`;
+            commentDiv.appendChild(commentHeader);
+
+            const commentContent = document.createElement('div');
+            commentContent.textContent = comment.content;
+            commentDiv.appendChild(commentContent);
+
+            if (comment.replies && comment.replies.length > 0) {
+                comment.replies.forEach(reply => {
+                    commentDiv.appendChild(renderComment(reply));
+                });
+            }
+            return commentDiv;
+        }
+
+        function renderPagination() {
+            totalPages = Math.ceil(activePosts.length / postsPerPage);
+            const paginationDiv = document.getElementById('pagination-controls');
+            paginationDiv.innerHTML = "";
+
+            const prevButton = document.createElement('button');
+            prevButton.textContent = "Previous";
+            prevButton.disabled = currentPage === 1;
+            prevButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderPosts();
+                    renderPagination();
+                }
+            };
+            paginationDiv.appendChild(prevButton);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageButton = document.createElement('button');
+                pageButton.textContent = i;
+                if (i === currentPage) {
+                    pageButton.classList.add("active");
+                }
+                pageButton.onclick = () => {
+                    currentPage = i;
+                    renderPosts();
+                    renderPagination();
+                };
+                paginationDiv.appendChild(pageButton);
+            }
+
+            const nextButton = document.createElement('button');
+            nextButton.textContent = "Next";
+            nextButton.disabled = currentPage === totalPages;
+            nextButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderPosts();
+                    renderPagination();
+                }
+            };
+            paginationDiv.appendChild(nextButton);
+        }
+
+        function toggleSortPostsByDate() {
+            if (sortOrder === "asc") {
+                activePosts.sort((a, b) => parsePostDate(b.date) - parsePostDate(a.date));
+                sortOrder = "desc";
+                document.getElementById("sort-button").textContent = "Sort by Date (Newest to Oldest)";
+            } else {
+                activePosts.sort((a, b) => parsePostDate(a.date) - parsePostDate(b.date));
+                sortOrder = "asc";
+                document.getElementById("sort-button").textContent = "Sort by Date (Oldest to Newest)";
+            }
+            currentPage = 1;
+            renderPosts();
+            renderPagination();
+        }
+
+        // Basic Levenshtein distance for fuzzy matching.
+        function levenshteinDistance(a, b) {
+            const matrix = [];
+            let i, j;
+            for (i = 0; i <= b.length; i++) { matrix[i] = [i]; }
+            for (j = 0; j <= a.length; j++) { matrix[0][j] = j; }
+            for (i = 1; i <= b.length; i++) {
+                for (j = 1; j <= a.length; j++) {
+                    if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                        matrix[i][j] = matrix[i - 1][j - 1];
+                    } else {
+                        matrix[i][j] = Math.min(
+                            matrix[i - 1][j - 1] + 1,
+                            matrix[i][j - 1] + 1,
+                            matrix[i - 1][j] + 1
+                        );
+                    }
+                }
+            }
+            return matrix[b.length][a.length];
+        }
+
+        // Enhanced search: if no direct matches, recommend posts via fuzzy matching.
+        // This function is now called "as you type" via the input event.
+        function searchPosts() {
+            const term = document.getElementById('search-input').value.trim();
+            if (term === "") {
+                activePosts = postsData.slice();
+                recommendedMessage = "";
+            } else {
+                try {
+                    const regex = new RegExp(term, "i");
+                    let results = postsData.filter(post => regex.test(post.title) || regex.test(post.content));
+                    if (results.length === 0) {
+                        // No exact matches: sort posts by fuzzy similarity of title.
+                        results = postsData.slice().sort((a, b) => {
+                            return levenshteinDistance(a.title.toLowerCase(), term.toLowerCase()) -
+                                levenshteinDistance(b.title.toLowerCase(), term.toLowerCase());
+                        });
+                        // Filter out posts that are too dissimilar.
+                        results = results.filter(post => levenshteinDistance(post.title.toLowerCase(), term.toLowerCase()) <= Math.max(2, Math.floor(term.length / 2)));
+                        if (results.length === 0) {
+                            results = postsData.slice();
+                        }
+                        recommendedMessage = "No exact matches found. Showing recommended results:";
+                    } else {
+                        recommendedMessage = "";
+                    }
+                    activePosts = results;
+                } catch (e) {
+                    alert("Invalid search term/regex.");
+                    return;
+                }
+            }
+            currentPage = 1;
+            renderPosts();
+            renderPagination();
+        }
+
+        // Attach event listeners.
+        document.getElementById("sort-button").onclick = toggleSortPostsByDate;
+        document.getElementById("search-button").onclick = searchPosts;
+        document.getElementById("clear-search-button").onclick = () => {
+            document.getElementById('search-input').value = "";
+            activePosts = postsData.slice();
+            recommendedMessage = "";
+            currentPage = 1;
+            renderPosts();
+            renderPagination();
+        };
+
+        // "As you type" recommendations:
+        document.getElementById("search-input").addEventListener("input", searchPosts);
+
+        renderPosts();
+        renderPagination();
+
+        /***********************
+         * MEMBERS PANEL & ARCHIVES
+         ***********************/
+        function toggleMembersPanel() {
+            const panel = document.getElementById("members-panel");
+            panel.classList.toggle("active");
+            const content = document.getElementById("main-content");
+            if (panel.classList.contains("active")) {
+                content.style.marginRight = "300px";
+            } else {
+                content.style.marginRight = "0";
+            }
+        }
+
+        // Show forum view (if coming from Archives)
+        function showForum() {
+            // Reload the page to restore the full forum view.
+            location.reload();
+        }
+
+        function showArchives() {
+            // Hide members panel if visible.
+            const panel = document.getElementById("members-panel");
+            if (panel.classList.contains("active")) {
+                toggleMembersPanel();
+            }
+            const content = document.getElementById("main-content");
+            content.innerHTML = `
+        <div class="forum-header">
+          <h1>Archives</h1>
+          <p>Memphis still fucking owes me 90 for this site</p>
+        </div>
+        <button class="sort-btn" onclick="showForum()">Return to Forum</button>
+      `;
+        }
+    </script>
+</body>
+
+</html>

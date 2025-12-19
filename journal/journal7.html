@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Journal</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Enhanced Journal Styles */
+        /* Animation for entry */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .highlight {
+            background: rgba(255, 51, 102, 0.1);
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 3px solid #ff3366;
+            margin: 1.5rem 0;
+        }
+
+        blockquote {
+            font-style: italic;
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+            border-left: 2px solid #ff3366;
+            color: #666;
+        }
+
+        body.dark-mode blockquote {
+            color: #ccc;
+        }
+
+        .journal-entry {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 2.5rem;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark-mode .journal-entry {
+            background: #2c2c2c;
+        }
+
+        .entry-header {
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            border-bottom: 1px solid rgba(255, 51, 102, 0.2);
+        }
+
+        .entry-header h2 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: #ff3366;
+        }
+
+        time {
+            font-size: 0.9rem;
+            color: #888;
+            display: block;
+            font-weight: 300;
+        }
+
+        .entry-content {
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .entry-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .entry-content ul {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .entry-content li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .entry-content li::before {
+            content: "▹";
+            color: #ff3366;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Dark Mode Adjustments */
+        body.dark-mode {
+            background: #121212;
+        }
+
+        body.dark-mode .main-content {
+            background: #121212;
+        }
+
+        body.dark-mode time {
+            color: #aaa;
+        }
+
+        body.dark-mode .entry-header {
+            border-color: rgba(255, 51, 102, 0.3);
+        }
+
+        /* Decorative Elements */
+        .journal-entry::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #ff3366;
+            margin-top: 2rem;
+            opacity: 0.5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .journal-entry {
+                margin: 20px;
+                padding: 1.5rem;
+            }
+
+            .entry-header h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="../public/about.html">About</a></li>
+            <li><a href="../investigations/case_dashboard.html">Investigations</a></li>
+            <li><a href="/journal/journal_dashboard.html">Journal</a></li>
+            <li><a href="/tools/cipher_tool.html">Cipher Tool</a></li>
+            <li><a href="/tools/search_tool.html">Search Tool</a></li>
+            <li><a href="/public/archives.html">Research Archive</a></li>
+            <li><a href="/viewing/contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Journal - Corporate Obituary</title>
+        <link rel="stylesheet" href="/styles/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="../public/about.html">About</a></li>
+                <li><a href="../investigations/case_dashboard.html">Investigations</a></li>
+                <li><a href="/journal/journal_dashboard.html">Journal</a></li>
+                <li><a href="/public/archives.html">Research Archive</a></li>
+                <li><a href="/viewing/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <!-- Header with Toggle -->
+            <header>
+                <h1>Erasmus?</h1>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </header>
+            <article class="journal-entry" style="animation: fadeInUp 0.6s ease-out;">
+                <div class="entry-header">
+                    <h2>Legendary Researcher & Scientist, Dr. Erasmus Walkenhurst To Move On To Newer Projects</h2>
+                    <time datetime="2054">2054</time>
+                </div>
+
+                <div class="entry-content">
+                    <p>It is with <span style="text-decoration: line-through;">great relief</span> profound sadness that
+                        we announce the departure of Dr. Erasmus Walkenhurst, after 12 diligent years at The Eye
+                        Biotech,
+                        formerly known as Luminex. His <span style="text-decoration: line-through;">questionable</span>
+                        ironclad conviction to the scientific method
+                        and progress will be sorely missed. He is the reason why we are all here today.</p>
+
+                    <blockquote>"Our commitment to development remains unwavering, even in this difficult
+                        personnel refreshment period."<br>
+                        <small>- Nathaniel Slizzer, Spokesperson (discharged 11/24/54)</small>
+                    </blockquote>
+
+                    <div class="highlight">
+                        <p>PUBLIC STATEMENT: The nature of Dr. Walkenhurst's decision remains private to him.<br>
+                            <span style="opacity: 0.8; font-size: 0.9em;">[INTERNAL MEMO: We are not to have
+                                dissenters.]</span>
+                        </p>
+                    </div>
+
+                    <p>Key achievements during Dr. Walkenhurst's illustrious tenure:</p>
+                    <ul>
+                        <li>Pioneered the Ascendancy Grid project</li>
+                        <li>Recipient of 7 consecutive Scientific Stewardship Awards <span
+                                style="color: #ff3366; margin-left: 8px;">†</span></li>
+                        <li>Developed breakthrough in cognitive enhancement systems <span
+                                style="color: #ff3366; margin-left: 8px;">‡</span></li>
+                        <li>Maintained perfect research approval record across all involved fields, including General Biotechnology,
+                            Bio-cybernetics, Neural Digitalization, Neurogenetic Editing, and more.<span
+                                style="color: #ff3366; margin-left: 8px;">¶</span></li>
+                    </ul>
+
+                    <div class="highlight" style="border-left-color: #00cc66;">
+                        <p>All employee transition packages have been processed.<br>
+                            <span style="font-size: 0.85em;">(Note: Non-disclosure agreements remain enforceable in
+                                perpetuity)</span>
+                        </p>
+                    </div>
+
+                    <p>The Board extends heartfelt gratitude to our loyal partners:</p>
+                    <ul>
+                        <li>Family and Friends of Dr. Erasmus Walkenhurst</li>
+                        <li>Novacells Cardiopulmonary Research Institute, now subsidiary under The Eye Ltd.,</li>
+                        <li>Ironclad Assurance Partners</li>
+                    </ul>
+
+                    <p style="border-top: 1px dashed rgba(255,51,102,0.3); padding-top: 1rem; margin-top: 2rem;">
+                        Memorial donations can be made to the Urban Innovation Council<br>
+                        <small style="opacity: 0.7;">[Account #EW-228-SID established 06/24/54]</small>
+                    </p>
+                </div>
+            </article>
+            <article class="journal-entry" style="animation: fadeInUp 0.6s ease-out;">
+
+                <div class="entry-content">
+                    <p>
+                        So Erasmus finally escaped their clasp. Or did they fire him, like they did Dr. Fausten?
+                    </p>
+
+                    <blockquote>No matter. Now that he's out of there, I need to search for him.
+                    </blockquote>
+
+                    <div class="highlight">
+                        <p>
+                            Open DSII-1-CENTRAL. I need his traces before he's too far gone.
+                        </p>
+                    </div>
+
+                    <p>What to do next</p>
+                    <ul>
+                        <li>DSII-1-CENTRAL to collect information leaks. </li>
+                        <li>Find Erasmus</li>
+                    </ul>
+
+                    <p>
+                        All of this just means he still has a chance to make it up, partially or fully.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <script>
+            // Dark Mode Script from Previous Entry
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
+            const mainContent = document.querySelector('.main-content');
+
+            const savedMode = localStorage.getItem('darkMode');
+            if (savedMode === 'enabled') {
+                enableDarkMode();
+            }
+
+            function enableDarkMode() {
+                body.classList.add('dark-mode');
+                mainContent.style.backgroundColor = '#121212';
+                darkModeToggle.checked = true;
+            }
+
+            function disableDarkMode() {
+                body.classList.remove('dark-mode');
+                mainContent.style.backgroundColor = '#f5f5f5';
+                darkModeToggle.checked = false;
+            }
+
+            darkModeToggle.addEventListener('change', () => {
+                if (darkModeToggle.checked) {
+                    enableDarkMode();
+                    localStorage.setItem('darkMode', 'enabled');
+                } else {
+                    disableDarkMode();
+                    localStorage.setItem('darkMode', 'disabled');
+                }
+            });
+
+            mainContent.style.backgroundColor = darkModeToggle.checked ? '#121212' : '#f5f5f5';
+        </script>
+    </body>
+
+    </html>

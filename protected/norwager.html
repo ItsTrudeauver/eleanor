@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norwager District</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Header styles */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation Bar */
+        .nav-bar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav-bar li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Footer Styles */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Sidebar Styles */
+        .side-tab {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            overflow-y: auto;
+            transition: right 0.3s ease-in-out;
+            padding: 20px;
+        }
+
+        .side-tab.open {
+            right: 0;
+        }
+
+        .side-tab .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 2rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        .tile-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 50px;
+        }
+
+        .tile {
+            width: calc(33.33% - 10px);
+            padding: 20px;
+            background: #444;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .tile:hover {
+            background: #666;
+        }
+
+        .story-content {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            color: black;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .side-tab-btn {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            transform: translateY(-50%);
+            border-radius: 5px 0 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Norwager District</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="survival-guide.html">Survival Guide</a></li>
+                <li><a href="local-contacts.html">Local Contacts</a></li>
+                <li><a href="forum.html">TY55 Forum</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="geography.html"> Know where you are</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="side-tab-btn" onclick="toggleSideTab()">Logs</div>
+
+    <div class="side-tab" id="sideTab">
+        <span class="close-btn" onclick="toggleSideTab()">&times;</span>
+        <h2>Personal logs/journal</h2>
+        <div class="tile-container">
+            <div class="tile" onclick="toggleStory('./story/story1.html', this)">First Day</div>
+            <div class="tile" onclick="toggleStory('./story/story2.html', this)">Make-over</div>
+            <div class="tile" onclick="toggleStory('./story/story3.html', this)">Thrift store</div>
+            <div class="tile" onclick="toggleStory('./story/story4.html', this)">Scrapyard</div>
+            <div class="tile" onclick="toggleStory('./story/story5.html', this)">Rogue</div>
+            <div class="tile" onclick="toggleStory('./story/story6.html', this)">Terrible night sleep</div>
+            <div class="tile" onclick="toggleStory('./story/story7.html', this)">Armed and ready(?)</div>
+            <div class="tile" onclick="toggleStory('./story/story8.html', this)">Stash</div>
+            <div class="tile" onclick="toggleStory('./story/story9.html', this)">Barter</div>
+            <div class="tile" onclick="toggleStory('./story/story10.html', this)">Rogue</div>
+
+
+        </div>
+
+        <div class="story-content" id="storyContent"></div>
+    </div>
+
+    <main class="main-content">
+        <section class="intro">
+            <h2>Welcome to Norwager District</h2>
+            <p>Nobody runs shit around here so if you're new and want to stay for some reason, make sure to not turn
+                yourself into a target</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Norwager District</p>
+    </footer>
+
+    <script>
+        let currentTile = null;
+        function toggleSideTab() {
+            document.getElementById('sideTab').classList.toggle('open');
+        }
+
+        function toggleStory(file, element) {
+            const storyContent = document.getElementById('storyContent');
+            if (currentTile === element) {
+                storyContent.style.display = 'none';
+                storyContent.innerHTML = '';
+                currentTile = null;
+            } else {
+                fetch(file)
+                    .then(response => response.text())
+                    .then(data => {
+                        storyContent.innerHTML = data;
+                        storyContent.style.display = 'block';
+                    })
+                    .catch(error => {
+                        storyContent.innerHTML = '<p>Error loading content.</p>';
+                    });
+                currentTile = element;
+            }
+        }
+    </script>
+</body>
+
+</html>

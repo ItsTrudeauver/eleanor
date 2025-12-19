@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleanor's Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/messenger.css">
+    <link rel="stylesheet" href="styles/who.css">
+    <link rel="stylesheet" href="styles/messenger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <!-- Permanent Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="public/about.html">About</a></li>
+                <li><a href="investigations/case_dashboard.html">Investigations</a></li>
+                <li><a href="journal/journal_dashboard.html">Journal</a></li>
+                <li><a href="public/archive.html">Research Archive</a></li>
+                <li><a href="public/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="glitch-container">
+                    <span class="original-text"><span class="glitch-name" data-text="Eleanor"><h1>Welcome back, Eleanor</h1></span></span>
+                    <span class="name-replacement">Who are you?</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider"></span>
+                </label>
+            </header>
+            <section class="directory">
+                <div class="section journal">
+                    <a href="journal/journal_dashboard.html" class="section-link">
+                        <h2>Personal Journal</h2>
+                        <span class="link-text">View Journal Entries</span>
+                    </a>
+                </div>
+
+                <div class="section investigation">
+                    <a href="investigations/case_dashboard.html" class="section-link">
+                        <h2>Active Investigations</h2>
+                        <span class="link-text">Explore Investigations</span>
+                    </a>
+                </div>
+
+                <div class="section research">
+                    <a href="public/archive.html" class="section-link">
+                        <h2>Research Archive</h2>
+                        <span class="link-text">View Research Logs</span>
+                    </a>
+                </div>
+
+                <div class="section contacts">
+                    <a href="public/contacts.html" class="section-link">
+                        <h2>Contacts</h2>
+                        <span class="link-text">View Contacts</span>
+                    </a>
+                </div>
+            </section>
+            <script src="scripts/main.js"></script>
+            <script src="scripts/messenger.js"></script>
+            
+            <div class="messenger-widget"></div>
+
+</body>
+
+</html>

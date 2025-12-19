@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Reports</title>
+    <style>
+        .image-wrapper {
+            position: relative;
+            break-inside: avoid;
+            margin: 1rem 0;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 300px;
+            /* Fixed height for consistency */
+            object-fit: cover;
+            object-position: center;
+            border-radius: 2px;
+            filter: grayscale(90%) contrast(110%);
+            transition: filter 0.3s ease;
+        }
+
+        .article-image:hover {
+            filter: grayscale(20%) contrast(100%);
+        }
+
+        /* Aspect ratio containers */
+        .vintage-portrait {
+            aspect-ratio: 3/4;
+            height: 400px;
+        }
+
+        .vintage-landscape {
+            aspect-ratio: 16/9;
+            height: 250px;
+        }
+
+        .image-left {
+            float: left;
+            width: 65%;
+            margin-right: 1.5rem;
+            shape-outside: rectangle(0, 0, 300px, 400px);
+        }
+
+        .image-right {
+            float: right;
+            width: 55%;
+            margin-left: 1.5rem;
+        }
+
+        .full-width-image {
+            column-span: all;
+            width: 100%;
+            height: 400px;
+            margin: 2rem 0;
+        }
+
+        .caption {
+            display: block;
+            font-size: 0.75rem;
+            line-height: 1.2;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.5rem;
+            padding: 0.25rem 0;
+            border-top: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+
+            .image-left,
+            .image-right {
+                float: none;
+                width: 100%;
+                margin: 1rem 0;
+            }
+
+            .article-image {
+                height: 250px;
+            }
+        }
+
+        /* Add subtle paper texture */
+        body {
+            background-image: url('data:image/png;base64,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');
+            font-family: 'Georgia', serif;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 20px;
+            background: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .newspaper {
+            background: white;
+            padding: 3rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            column-count: 3;
+            column-gap: 40px;
+            column-rule: 1px solid #ddd;
+        }
+
+        .headline {
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            column-span: all;
+            text-align: center;
+            margin: 1rem 0;
+            border-bottom: 4px double #333;
+            padding-bottom: 1rem;
+        }
+
+        .subheadline {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #666;
+            column-span: all;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .byline {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #444;
+            margin: 0.5rem 0;
+        }
+
+        .article-image {
+            width: 100%;
+            margin: 1rem 0;
+            break-inside: avoid;
+        }
+
+        .caption {
+            font-size: 0.8rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        .lead-paragraph {
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-indent: 2rem;
+        }
+
+        .sidebar {
+            background: #f8f8f8;
+            padding: 1rem;
+            border-left: 3px solid #ccc;
+            break-inside: avoid;
+            margin: 1rem 0;
+        }
+
+        .pull-quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #444;
+            border-left: 3px solid #999;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            float: right;
+            width: 40%;
+            shape-outside: margin-box;
+        }
+
+        .dateline {
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 1rem;
+            color: #888;
+        }
+
+        .advertisement {
+            background: #eee;
+            padding: 1rem;
+            text-align: center;
+            margin: 1rem 0;
+            break-inside: avoid;
+            font-family: Arial, sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .newspaper {
+                column-count: 1;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="newspaper">
+        <div class="dateline">VOL. CXXIII • NO. 45 • WEDNESDAY MORNING, JUNE 15, 2051</div>
+        <h1 class="headline">OCULUS LTD., TO REBRAND TO THE EYE LTD.,</h1>
+        <h2 class="subheadline">Company shifts focus amid major industry acquisitions</h2>
+
+        <div class="sidebar">
+            <h3>In Other News</h3>
+            <p><strong>Local Election Results:</strong>Corporate loyalists sweep city council with strong fiscal
+                plans...</p>
+            <p><strong>Market Report:</strong> Novacells stocks plummet, bankruptcy in sight?</p>
+            <p><strong>Weather Forecast:</strong> Cloudy with chance of showers, high of 62°...</p>
+        </div>
+
+
+
+        <p class="lead-paragraph">The world’s largest electronics manufacturer has unveiled a bold new identity.
+            Formerly Oculus Ltd., the company is now officially The Eye Ltd., a name its leadership says reflects its
+            vision for the future.</p>
+
+        <div class="pull-quote">
+            "Our mission has always been the same: see the challenges ahead and act decisively."
+        </div>
+
+        <p>The announcement follows a series of strategic acquisitions, including the struggling cardiopulmonary
+            research
+            company, Novacells, which has been on the brink of collapse. Internal reports indicate a $2 billion
+            reinvestment as
+            part of the transition, though the finer details remain under strict NDA.
+
+        </p>
+
+
+
+        <p>The rebrand has sparked debate among analysts. Some see it as a sharp, forward-thinking move that
+            cements The Eye’s dominance in the tech sector. Others question whether the shift is necessary for a
+            corporation already deeply entrenched in global markets.</p>
+
+        <figure style="float: right; width: 50%; margin-left: 1rem;">
+            <img src="https://th-thumbnailer.cdn-si-edu.com/Fg1D8rpb2hNa9h4YBM2bYyyu2Z0=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/fb/03/fb03d0ca-4934-481e-8067-ea623484fb7e/3786725982_b0ea8bfb3a_b.jpg"
+                alt="Crowd at the rebranding announcement" class="article-image">
+            <figcaption class="caption">Enthusiastic crowd at the reveal. Image: Ellow Salwood
+            </figcaption>
+        </figure>
+
+        <p>
+            Still, investors responded favorably—stock values jumped following the reveal, reinforcing confidence in the
+            company’s direction. The full Novacells merger is expected to finalize within the year.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi, mom</title>
+    <style>
+        
+        .heartbeat {
+            animation: pulse 1.2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+
+        /* Base styles */
+        body {
+            margin: 0;
+            background: #001100;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* CRT Effects */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                repeating-linear-gradient(
+                    0deg,
+                    rgba(0, 255, 0, 0.05) 0px,
+                    rgba(0, 255, 0, 0.05) 1px,
+                    transparent 1px,
+                    transparent 3px
+                ),
+                radial-gradient(circle at center, transparent 60%, rgba(0, 20, 0, 0.8));
+            pointer-events: none;
+            z-index: 2;
+            animation: scanline 6s linear infinite;
+        }
+
+        @keyframes scanline {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(100%); }
+        }
+
+        .crt-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation: glow 3s ease-in-out infinite;
+            box-shadow: inset 0 0 30px rgba(0, 255, 0, 0.1);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes glow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            z-index: 3;
+        }
+
+        .text-block {
+            position: absolute;
+            opacity: 0;
+            max-width: 80%;
+            text-shadow: 0 0 10px rgba(0,255,0,0.5);
+            animation: floatOut 5s forwards;
+            filter: blur(0.5px);
+        }
+
+        /* Float animation */
+        @keyframes floatOut {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(var(--float-x), var(--float-y));
+            }
+        }
+
+        /* Speaker colors */
+        .text-block[data-speaker="Eleanor"] { color: #ffffff; }
+        .text-block[data-speaker="Mrs. Ashcroft"] { color: #fa8072; }
+        .text-block[data-speaker="Narrator"] { color: #00ff00; font-style: italic; }
+
+        #debug {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            color: #0f0;
+            z-index: 1000;
+            font-family: 'Courier New', monospace;
+        }
+        .tremble {
+            animation: tremble 0.1s ease-in-out infinite alternate,
+                     floatOut 5s forwards !important;
+        }
+
+        @keyframes tremble {
+            0% { transform: translateX(-1px) rotate(-0.5deg); }
+            100% { transform: translateX(1px) rotate(0.5deg); }
+        }
+
+        .tear {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tear::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 140%;
+            height: 200%;
+            background: linear-gradient(45deg,
+                rgba(255,255,255,0.1) 0%,
+                rgba(255,255,255,0.05) 15%,
+                transparent 30%
+            );
+            animation: tear-flow 2s linear forwards;
+            pointer-events: none;
+        }
+
+        @keyframes tear-flow {
+            0% { transform: translateY(-100%) rotate(10deg); opacity: 0; }
+            20% { transform: translateY(0%) rotate(5deg); opacity: 0.3; }
+            100% { transform: translateY(100%) rotate(0deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="crt-glow"></div>
+    <div id="debug">CLICK TO INITIALIZE</div>
+    <div class="container" id="container"></div>
+    
+
+    <script>
+        // === CORE SYSTEM VARIABLES ===
+        let audioContext = null;
+        let isAudioUnlocked = false;
+        let experienceStarted = false;
+
+        // === INSERT YOUR STEPS ARRAY HERE ===
+        const steps = [
+    // === TRANSCRIPT 1: ELEANOR'S MOM'S REQUEST ===
+    {
+        speaker: "Narrator",
+        text: "[Recording begins. Faint hum of hospital equipment. Soft beeping monitors. Ventilated air cycles.]",
+        duration: 4000,
+        audio: {url: 'scene_audio/hospital-ambience-loop.mp3', duration: 190500}
+    },
+    {
+        speaker: "Narrator", 
+        text: "[Door clicks open. Inaudible footsteps approach]",
+        duration: 8000,
+        audio: {url: 'scene_audio/door-open-footsteps.mp3', duration: 4000}
+    },
+    {
+        speaker: "Eleanor",
+        text: '"Mom. I brought you something"',
+        duration: 4000,
+        effects: ['tremble']
+    },
+    {
+        speaker: "Eleanor",
+        text: '"The chamomile you like. Had to go all the way across town for it; they barely stock it anymore. But I found it."',
+        duration: 6000,
+        effects: ['tremble'],
+        audio: {url: 'scene_audio/cup-clinking.mp3', duration: 20000}
+    },
+    {
+        speaker: "Narrator",
+        text: "[Eleanor exhales. Sheets rustle.]",
+        duration: 3000,
+        audio: {url: 'scene_audio/chair-sheets.mp3', duration: 3000}
+    },
+    {
+        speaker: "Narrator",
+        text: "[Weak, fluttering cough.]",
+        duration: 6000,
+        audio: {url: 'scene_audio/weak-cough.mp3', duration: 1000}
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"Ellie… you didn’t have to do all this"',
+        duration: 4000,
+        effects: ['tear']
+    },
+    {
+        speaker: "Eleanor",
+        text: '"I wanted to."',
+        duration: 2500,
+    },
+    {
+        speaker: "Narrator",
+        text: "[Silence stretches. Slow monitor beeps punctuate.]",
+        duration: 5000
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"You shouldn’t be here, baby. You should be out there... living."',
+        duration: 6000,
+        effects: ['tear']
+    },
+    {
+        speaker: "Eleanor",
+        text: '"I am living. You’re here. I’m here. That’s enough."',
+        duration: 5500,
+        effects: ['tremble'],
+        audio: {url: 'scene_audio/chair-shifting.mp3', duration: 5000}
+    },
+    {
+        speaker: "Narrator",
+        text: "[Dry chuckle transforms into strained breath.]",
+        duration: 3000,
+        audio: {url: 'scene_audio/breath.mp3', duration: 3000}
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"Eleanor, I know what you’re doing."',
+        duration: 4000
+    },
+    {
+        speaker: "Narrator",
+        text: "[Eleanor shifts. Fabric creaks. Long pause.]",
+        duration: 4000,
+        audio: {url: 'scene_audio/fabric-creak.mp3', duration: 1700}
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"You’ve always carried too much. This… isn’t something you can fix by staying..."',
+        duration:5000,
+        effects: ['tear']
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"By putting your whole life on pause for me."',
+        duration: 4000,
+        effects: ['tear']
+    },
+    {
+        speaker: "Eleanor",
+        text: '"You’re my mom. I would do anything..."',
+        duration: 3000,
+        effects: ['heartbeat']
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: "Ellie.",
+        duration: 6000,
+       
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: "I need you to hear me now.",
+        duration: 8000,
+        audio: {url: 'scene_audio/labored-breathing.mp3', duration: 5000}
+    },
+    {
+        speaker: "Narrator",
+        text: "[Eleanor’s breathing becomes uneven. Rehearsed silence.]",
+        duration: 4000,
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"I want you to file the discontinuation form."',
+        duration: 4000
+    },
+    {
+        speaker: "Narrator",
+        text: "[Sharp inhale. Chair scrapes violently.]",
+        duration: 2000,
+        audio: {url: 'scene_audio/chair-scrape.mp3', duration: 2000}
+    },
+    {
+        speaker: "Eleanor",
+        text: '"No. No, don’t...don’t say it like that. Like it’s already done..."',
+        duration: 7000,
+        effects: ['tremble', 'heartbeat']
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"Ellie, please."',
+        duration: 2500,
+        effects: ['tear']
+    },
+    {
+        speaker: "Narrator",
+        text: "[Abrupt standing. Chair legs screech.]",
+        duration: 2000,
+        audio: {url: 'scene_audio/chair-screeching.mp3', duration: 1000}
+    },
+    {
+        speaker: "Eleanor",
+        text: '"You can’t ask me that. Mom, I left that job. I left all of it."',
+        duration: 4000,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Eleanor",
+        text: '"I thought.." [Breath catches] "I thought I could still have you."',
+        duration: 3500,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Eleanor",
+        text: '"I thought I could still have you."',
+        duration: 5500,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Narrator",
+        text: "[Fragile fingers grasp wrist. Delicate contact.]",
+        duration: 3000,
+        audio: {url: 'scene_audio/fabric-creak.mp3', duration: 2000}
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"I want you to live, Ellie. Really live. Not for me. Not anymore."',
+        duration: 7000
+    },
+    {
+        speaker: "Narrator",
+        text: "[Eleanor’s breath shudders. Tense silence.]",
+        duration: 4000,
+        audio: {url: 'scene_audio/breath-shudder.wav', duration: 4000}
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"Eleanor Ashcroft."',
+        duration: 5000,
+        effects: ['tear']
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"Please."',
+        duration: 5000,
+        effects: ['tear']
+    },
+    {
+        speaker: "Narrator",
+        text: "[Long exhale. Ventilator hum dominates.]",
+        duration: 6000,
+        audio: {url: 'scene_audio/ventilator-hum.mp3', duration: 20000}
+    },
+
+    // === TRANSCRIPT 2: INFORMED CONSENT ===
+    {
+        speaker: "Narrator",
+        text: "[Recording ends.]",
+        duration: 10000,
+    },
+    {
+        speaker: "Narrator",
+        text: "[Recording begins. The same hospital ambiance. Subtle clipboard placement.]",
+        duration: 4000,
+        audio: {url: 'scene_audio/clipboard-impact.mp3', duration: 3000}
+    },
+    {
+        speaker: "Doctor",
+        text: '"Mrs. Elana Ashcroft, Ms. Eleanor Ashcroft. Before we proceed, we need to go over the informed consent form."',
+        duration: 6000
+    },
+    {
+        speaker: "Doctor",
+        text: '"This document ensures the decision to discontinue life support is made with full understanding."',
+        duration: 6000,
+        audio: {url: 'scene_audio/paper-rustle.mp3', duration: 3000}
+    },    // INFORMED CONSENT CONTINUED
+    {
+        speaker: "Doctor",
+        text: '"Both patient and next of kin must sign."',
+        duration: 4000
+    },
+    {
+        speaker: "Narrator",
+        text: "[Paper shifts. Pen offered.]",
+        duration: 2000,
+    },
+    {
+        speaker: "Doctor",
+        text: '"Mrs. Elana Ashcroft, do you confirm this is your decision and consent to our listed procedures?"',
+        duration: 5000
+    },
+    {
+        speaker: "Mrs. Ashcroft",
+        text: '"I do."',
+        duration: 2000,
+        effects: ['tear'],
+        audio: {url: 'scene_audio/signature-scratch.mp3', duration: 4000}
+    },
+    {
+        speaker: "Narrator",
+        text: "[Form turns. Heavy silence.]",
+        duration: 4000
+    },
+    {
+        speaker: "Eleanor",
+        text: '"This is the last thing I can do for you."',
+        duration: 5000,
+        effects: ['tremble'],
+        audio: {url: 'scene_audio/pen-final-sign.mp3', duration: 3000}
+    },
+
+    // === TRANSCRIPT 3: AFTER THE PROCEDURE ===
+    {
+        speaker: "Narrator",
+        text: "[Switch clicks. Monitor slows.]",
+        duration: 3000,
+        audio: {url: 'scene_audio/switch-click.mp3', duration: 1000}
+    },
+    {
+        speaker: "Narrator",
+        text: "[Beeping stops. Absolute silence.]",
+        duration: 3000,
+        audio: {url: 'scene_audio/flatline.mp3', duration: 3000}
+    },
+    {
+        speaker: "Narrator",
+        text: "[Muffled sob]",
+        duration: 3000,
+        audio: {url: 'scene_audio/sob-thud.mp3', duration: 3000}
+    },
+    {
+        speaker: "Eleanor",
+        text: '"I— I—"',
+        duration: 3000,
+        effects: ['tremble', 'tear']
+    },
+    {
+        speaker: "Narrator",
+        text: '"Eleanor finally let it all out"',
+        duration: 3000,
+        effects: ['tremble', 'tear'],
+        audio: {url: 'scene_audio/cry.mp3', duration: 60000}
+    },
+    {
+        speaker: "Narrator",
+        text: '"All of the pain, that she had pressed..."',
+        duration: 3000,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Narrator",
+        text: '"...under the assumption that..."',
+        duration: 4000,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Narrator",
+        text: '"...as long as she works hard, she\'ll solve everything."',
+        duration: 4000,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Narrator",
+        text: '"Eleanor cries, the first time since she was 15..."',
+        duration: 4000,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Narrator",
+        text: '"For her mother..."',
+        duration: 4000,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Narrator",
+        text: '"for Ranna..."',
+        duration: 4000,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Narrator",
+        text: '"for Rasmus (?)..."',
+        duration: 4000,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Narrator",
+        text: '"and for her."',
+        duration: 4000,
+        effects: ['tremble', 'tear'],
+    },
+    {
+        speaker: "Narrator",
+        text: "[Minutes pass.]",
+        duration: 5000,
+        audio: {url: 'scene_audio/clock-ticking.mp3', duration: 50000}
+    },
+    {
+        speaker: "Doctor",
+        text: '"Ms. Ashcroft… we can give you a few more minutes."',
+        duration: 5000
+    },
+    {
+        speaker: "Narrator",
+        text: "[No response. Distant hospital murmurs.]",
+        duration: 20000,
+       
+    },
+    {
+        speaker: "Narrator",
+        text: '"[An hour goes by.]"',
+        duration: 20000
+    },
+    {
+        speaker: "Narrator",
+        text: "[Eleanor steadies]",
+        duration: 4000,
+      
+    },
+    {
+        speaker: "Narrator",
+        text: "[Footsteps exit.]",
+        duration: 2000,
+        audio: {url: 'scene_audio/footsteps-exit.mp3', duration: 10000}
+    },
+    {
+        speaker: "Narrator",
+        text: "[Eleanor leaves the door open. Transmission ends.]",
+        duration: 3000,
+        audio: {url: 'scene_audio/hospital-end.wav', duration: 10000}
+    },
+    {
+        speaker: "Narrator",
+        text: "[Eleanor leaves the door open. Transmission ends.]",
+        duration: 8000,
+        audio: {url: 'scene_audio/hospital-end.wav', duration: 10000}
+    },
+    {
+        speaker: "Eleanor",
+        text: "so time doth pass",
+        duration: 4000,
+        audio: {url: 'scene_audio/finality.mp3', duration: 130000}
+    },
+    {
+        speaker: "Eleanor",
+        text: "mom, you were spring",
+        duration: 4000,
+       
+    },
+    {
+        speaker: "Eleanor",
+        text: "were blades of grass",
+        duration: 4000,
+       
+    },
+    {
+        speaker: "Eleanor",
+        text: "were winds that sing",
+        duration: 4000,
+        effects: ["tear"]
+       
+    },
+    {
+        speaker: "Eleanor",
+        text: "mom, you were the summer",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "of cascading rains",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "which poured over, washed",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "away the pain",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "mom, i tried",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "the best i could",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "so why wouldn't you give me",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "a hug, like you always would?",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "the warmth of winter",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "the life of fall",
+        duration: 4000,
+        effects: ["tear"]
+
+    },
+    {
+        speaker: "Eleanor",
+        text: "would you be fine",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "giving me them all?",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "mom, you were how",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "i learned to be",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "someone who loves",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "someone who is free",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "i wouldn't mind coming",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "to you, all year round",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "so tell me, please",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "why leave me out",
+        duration: 4000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "of your thoughts, your pain",
+        duration: 6000,
+        effects: ["tear"]
+    },
+    {
+        speaker: "Eleanor",
+        text: "why leave me out?",
+        duration: 8000,
+        effects: ["tear"]
+    }
+
+
+];
+
+        // === AUDIO SYSTEM ===
+        async function playPersistentAudio(audioInfo) {
+    if (!isAudioUnlocked || !audioInfo) return;
+    
+    try {
+        const audio = new Audio(audioInfo.url);
+        audio.preload = 'auto';
+        const playPromise = audio.play();
+
+        if (playPromise !== undefined) {
+            await playPromise.catch(() => {});
+        }
+
+        // Check if the audio to be faded out is the hospital ambience
+        if (audioInfo.url === 'scene_audio/hospital-ambience-loop.mp3'|| 'scene_audio/ventilator-hum.mp3') {
+            setTimeout(() => {
+                let fadeOutInterval = setInterval(() => {
+                    if (audio.volume > 0.05) {
+                        audio.volume -= 0.05; // Reduce volume gradually
+                    } else {
+                        audio.volume = 0;
+                        audio.pause();
+                        audio.remove();
+                        clearInterval(fadeOutInterval);
+                    }
+                }, 200); // Adjust this interval for a smoother fade-out
+            }, audioInfo.duration - 10000); // Start fading out 5 seconds before the end
+        } else {
+            // Default stop behavior for all other audio files
+            setTimeout(() => {
+                audio.pause();
+                audio.remove();
+            }, audioInfo.duration);
+        }
+
+    } catch (e) {
+        console.error('Audio error:', e);
+    }
+}
+
+
+        // === CINEMATIC ENGINE ===
+        function createFloatVector() {
+            const angle = Math.random() * Math.PI * 2;
+            const distance = 50 + Math.random() * 100;
+            return {
+                x: Math.cos(angle) * distance + 'px',
+                y: Math.sin(angle) * distance + 'px'
+            };
+        }
+
+        async function showStep(step) {
+            return new Promise(resolve => {
+                const element = document.createElement('div');
+                element.className = `text-block ${step.effects?.join(' ') || ''}`;
+                element.textContent = step.text;
+                element.dataset.speaker = step.speaker;
+
+                const float = createFloatVector();
+                element.style.setProperty('--float-x', float.x);
+                element.style.setProperty('--float-y', float.y);
+
+                if (step.audio) {
+                    playPersistentAudio(step.audio);
+                }
+
+                document.getElementById('container').appendChild(element);
+                setTimeout(() => {
+                    element.remove();
+                    resolve();
+                }, step.duration);
+            });
+        }
+
+        // === INITIALIZATION SEQUENCE ===
+        async function preloadAssets() {
+            const audioUrls = [...new Set(steps.map(step => step.audio?.url).filter(Boolean))];
+            await Promise.all(audioUrls.map(url => {
+                return new Promise((resolve) => {
+                    const audio = new Audio(url);
+                    audio.preload = 'auto';
+                    audio.onloadeddata = resolve;
+                    audio.onerror = resolve;
+                });
+            }));
+        }
+
+        function unlockAudio() {
+            if (isAudioUnlocked) return;
+            
+            const buffer = audioContext.createBuffer(1, 1, 22050);
+            const source = audioContext.createBufferSource();
+            source.buffer = buffer;
+            source.connect(audioContext.destination);
+            source.start(0);
+            
+            document.body.addEventListener('click', () => {
+                if (audioContext.state === 'suspended') {
+                    audioContext.resume();
+                }
+                isAudioUnlocked = true;
+                startExperience();
+            }, { once: true });
+        }
+
+        async function startExperience() {
+            if (experienceStarted) return;
+            experienceStarted = true;
+            
+            await preloadAssets();
+            document.getElementById('debug').textContent = "TRANSCRIPT PLAYING...";
+            
+            for (const step of steps) {
+                await showStep(step);
+            }
+            
+            document.getElementById('debug').textContent = "END OF TRANSMISSION";
+        }
+
+        // === FIRST INTERACTION HANDLER ===
+        document.body.addEventListener('click', () => {
+            if (!experienceStarted) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                
+                const unlockOverlay = document.createElement('div');
+                unlockOverlay.innerHTML = `
+                    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000c; display: flex; justify-content: center; align-items: center; z-index: 10000;">
+                        <button style="padding: 20px 40px; background: #002200; border: 2px solid #0f0; color: #0f0; font-family: 'Courier New'; cursor: pointer; font-size: 1.2em;">
+                            hi, mom
+                        </button>
+                    </div>
+                `;
+                
+                unlockOverlay.querySelector('button').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    unlockAudio();
+                    unlockOverlay.remove();
+                });
+                
+                document.body.appendChild(unlockOverlay);
+            }
+        }, { once: true });
+    </script>
+</body>
+</html>

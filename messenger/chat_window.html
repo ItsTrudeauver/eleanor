@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger - Full Screen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../styles/messenger.css">
+    <style>
+        /* Override styles for full-screen version */
+        .widget-expanded {
+            width: 100vw !important;
+            height: 100vh !important;
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-radius: 0 !important;
+        }
+
+        .widget-body {
+            height: calc(100vh - 60px) !important;
+        }
+
+        .widget-close {
+            transform: scale(1.3);
+            margin-left: auto;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .message-bubble {
+                max-width: 75% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="messenger-widget widget-expanded">
+        <div class="widget-expanded">
+            <div class="widget-header">
+                <h3>Messenger</h3>
+                <div class="widget-controls">
+                    <button class="widget-back" style="display: none">←</button>
+                    <button class="widget-close">&times;</button>
+                </div>
+            </div>
+            <div class="widget-body"></div>
+        </div>
+    </div>
+
+    <script>
+        class FullScreenMessenger {
+            constructor() {
+                this.conversations = [];
+                this.currentConvo = null;
+                this.showingConversationList = true;
+                this.backButton = document.querySelector('.widget-back');
+                this.headerTitle = document.querySelector('.widget-header h3');
+                this.body = document.querySelector('.widget-body');
+                
+                this.initializeEventListeners();
+                this.loadMessages();
+            }
+
+            async loadMessages() {
+                try {
+                    const response = await fetch('messages.json');
+                    this.conversations = await response.json();
+                    this.showConversationList();
+                } catch (error) {
+                    console.error('Error loading messages:', error);
+                }
+            }
+
+            initializeEventListeners() {
+                this.backButton.addEventListener('click', () => this.showConversationList());
+                document.querySelector('.widget-close').addEventListener('click', () => {
+                    window.history.back(); // Or navigate back to previous page
+                });
+            }
+
+            showConversationList() {
+                this.backButton.style.display = 'none';
+                this.headerTitle.textContent = 'Messenger';
+                this.showingConversationList = true;
+
+                this.body.innerHTML = `
+                    <ul class="conversation-list">
+                        ${this.conversations.map(convo => {
+                            const lastMessage = convo.messages[convo.messages.length - 1];
+                            return `
+                                <li class="conversation-item" data-id="${this.conversations.indexOf(convo)}">
+                                    <div class="conversation-header">
+                                        <div class="conversation-participants">
+                                            ${convo.participants.filter(p => p !== 'You').join(', ')}
+                                        </div>
+                                        <div class="conversation-time">
+                                            ${new Date(lastMessage.timestamp).toLocaleDateString('en-US', {
+                                                year: 'numeric',
+                                                month: 'short',
+                                                day: 'numeric'
+                                            })}
+                                        </div>
+                                    </div>
+                                    <div class="conversation-preview">
+                                        ${lastMessage.text}
+                                    </div>
+                                </li>
+                            `;
+                        }).join('')}
+                    </ul>
+                `;
+
+                this.body.querySelectorAll('.conversation-item').forEach(item => {
+                    item.addEventListener('click', (e) => {
+                        this.currentConvo = this.conversations[e.currentTarget.dataset.id];
+                        this.showingConversationList = false;
+                        this.renderMessages();
+                        this.backButton.style.display = 'block';
+                        this.headerTitle.textContent = 
+                            this.currentConvo.participants.filter(p => p !== 'You').join(', ');
+                    });
+                });
+            }
+
+            renderMessages() {
+                this.body.innerHTML = `
+                    <div class="chat-messages">
+                        ${this.currentConvo.messages.map(msg => `
+                            <div class="chat-message ${msg.sender === 'user' ? 'sender' : 'receiver'}">
+                                ${msg.sender !== 'user' ? `
+                                    <div class="avatar" 
+                                         data-name="${msg.sender}"
+                                         style="background-image: url('${msg.avatar}')">
+                                    </div>
+                                ` : ''}
+                                <div class="message-bubble">
+                                    ${msg.text}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                
+                this.body.scrollTop = this.body.scrollHeight;
+            }
+        }
+
+        // Initialize when DOM loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new FullScreenMessenger();
+        });
+    </script>
+</body>
+</html>

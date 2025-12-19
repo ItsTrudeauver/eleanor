@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/investigations.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="public/about.html">About</a></li>
+            <li><a href="../investigations/case_dashboard.html">Investigations</a></li>
+            <li><a href="/journal/journal_dashboard.html">Journal</a></li>
+            <li><a href="/public/archives.html">Research Archive</a></li>
+            <li><a href="/viewing/contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header with Dark Mode Toggle -->
+        <header>
+            <h1>Cases</h1>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+        </header>
+
+        <!-- case Tabs Container -->
+        <div class="case-tabs-container">
+            <a href="case_walkenhurst.html" class="case-tab">
+                <div class="case-header">
+                    <h3 class="case-title">Erasmus's whereabouts</h3>
+                    <span class="case-year">2057</span>
+                </div>
+                <p class="case-preview">I need to find him</p>
+            </a>
+
+            <a href="case_WKO.html" class="case-tab">
+                <div class="case-header">
+                    <h3 class="case-title">White Knights Organization</h3>
+                    <span class="case-year">2055</span>
+                </div>
+                <p class="case-preview">Everything is off, subtly</p>
+            </a>
+
+            <a href="case_grid_conspiracy.html" class="case-tab">
+                <div class="case-header">
+                    <h3 class="case-title">What are The Eye doing?</h3>
+                    <span class="case-year">2050 - Ongoing</span>
+                </div>
+                <p class="case-preview">I guess I'm DSII-kamikazeing again.</p>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Load saved theme
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            body.classList.add(currentTheme);
+            darkModeToggle.checked = currentTheme === 'dark-mode';
+        }
+
+        // Toggle theme
+        darkModeToggle.addEventListener('change', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark-mode' : '');
+        });
+    </script>
+</body>
+
+</html>

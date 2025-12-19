@@ -1,0 +1,3741 @@
+[
+    {
+        "participants": [
+            "Rasmus",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Rasmus",
+                "text": "Eleanor, you've been AWOL since last year. The board told me you quit?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Where are you??",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Eleanor answer me??",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "You were supposed to help me stop them, remember??",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Where the hell are you now? Eleanor you need to tell me if something happened",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Damn it Eleanor. Get back to me as soon as possible okay?",
+                "timestamp": "2050-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "Hey Ranna, how's it been? I really need someone to talk to rn",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Hello Eleanor! How may I assist you today? 😊",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Ranna?",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Yes Eleanor, I am \"Ranna\" 😊. I am always here to support you with your emotional baggage!",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Are you pulling a prank on me? This isn't the time..",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "I apologize for any confusion I may have caused! To answer your question: no, I am not pranking you - I am here to help you through tough times!",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "God no, Ranna...",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "What seems to be the problem 😊? Let's figure it out together!",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "...",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "It seems you are under a lot of stress. Let me know how I can help!",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Good night, Ranna",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "Silly! It is really sunny at the moment! I could dive straight into a pool! ",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "The user cannot receive this message currently. Please try again later.",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2049-09-20T10:00:00"
+
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "Erasmus Walkenhurst",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "Rasmus, what the fuck is the meaning of this?",
+                "timestamp": "2023-09-20T10:00:00"
+            },
+            {
+                "sender": "user",
+                "text": "\"Oculus announces new Grid merger with 14 military companies\". Do you know what the implications of this are???",
+                "timestamp": "2023-09-20T10:00:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Eleanor, I know you don't trust me, but I tried opposing. Dr. Fausten too. They fucking fired him",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "WHAT?? And the committee??",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "They replaced all of them with new personnel",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "I honestly tried to stop them, but in the end I can't leverage anything to sit on the negotiation table with them",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Rasmus, this is serious!! This, I cannot work with this??",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Do you think I can? I may be blind to ethics but I know what this co-optation means Eleanor. I've been trying to wipe the logs, but they have failsafes",
+                "timestamp": "2047-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "this is EXACTLY why I said we needed an ethics council in the first place",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "When?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Few weeks from now. I tried filing to the Court of Arbitration in Business Ethics, but they dismissed the case. Oculus is too big to fail now",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Can you do something??",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "I sealed my and Dr. Fausten's core research data. I need your code too Eleanor.",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Look, if there is any time at all to trust me, it's now. I'm a fool, not a crook. We need to limit them",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Code: Aranna#1, decipher method -delta12, key nHcasZbTTeC. Hurry.",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "On it",
+                "timestamp": "2049-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Aranna Adebayo",
+                "text": "winter breaks!! finally",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "oh woah its...the end of the year. that's so fast",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "some rest is nice isnt it",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "yeah. its been a turbulent 48. hard to even track how the time's gone",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Ellie",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "hm?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "lets go somewhere next winter. like, a ski resort or something",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "why not now?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "cant! a fundraiser lead going to ski resorts raises eyebrows",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "right, i forgot the fund is finally taking off. that means more work for you...",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "not rlly it probs means more workers! i might even have some time to unload every few days",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "thats great!",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "hey, no takebacksies on the free rides!!!",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "not gonna. hm maybe we should invite BB next year?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "!! good idea, he been helping a ton. btw next venue is nearby, u guys dont have to drive me. 5 mins walk at most",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "i find it hard to trust this lol",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "trust! never lied to u did i",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "alright alright, i trust you",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "The user has unsent a message.",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "sorry, hand slipped 🥲🥲",
+                "timestamp": "2048-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Ellie Ellie",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "what's up?",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "i appreciate u driving me to work but surely i cant just keep getting lifts from ur friend",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "he drives real smoothly but its been a year. isnt he a Novonne guy",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "i thought scientists are rlly busy",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "its ok, BB is a long time friend. he offered to drive you himself",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "yeah but my sites r sporadic. venues kept shifting",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "thats why i cant let you drive Ranna, youre constantly stretched too thin",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "i mean im not against free rides, but is ur friend here omnibenevolent or smth",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "he even buys me takeouts time to time. i thought science guys r all the aloof type",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "BB is like that, he does what he likes. please just let us help you with this one tiny thing",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "user",
+                "text": "i dont have official hours, BB likes driving around, this is the least we could do",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "mhm..dont forget your own work tho",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "i wont. its always on my mind. but nothings as important as your well being",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "nothings more important to me than you too Eleanor",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "ill help in whatever way i can. youve done so much for me, now its my turn",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2049-09-20T10:00:00"
+
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "alright then 🥲 can u get some frapp tmr? im missing its taste",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "sure, anything you'd like",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2048-09-20T10:00:00"
+
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Brian Barenshaw",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "hey BB. I know it's been a long time but I have a favor to ask tomorrow",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "BB",
+                "text": "OMG Ellie, haven't heard from you for so long o7 Seen you on the TV tho, my whole department's jealous",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "BB",
+                "text": "So whats up, what do you need?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "can you have someone give my friend a lift home tomorrow from the Aides for Meldrosia funding site? Ill text you the address",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "user",
+                "text": "shes overworked and tired, i cant let her drive or take the metro",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "BB",
+                "text": "Say no more, I'll snap a finger and it's done. Barely an inconvenience",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "thanks BB. reliable as always",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "BB",
+                "text": "Don't mention it. Anyway, everything good? Heard you worked with that Rasmus guy for that Grid project. Been the hottest news all year round",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "Im doing well! hope the same goes for you",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "BB",
+                "text": "Yeah it's lax. Nice to hear from you again. I'll make sure your friend has a smooth ride home tomorrow",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "Thanks again BB. owe you a big one",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "BB",
+                "text": "Not at all not at all tch tch",
+                "timestamp": "2047-09-20T10:00:00",
+                "avatar": "./avatars/brian.png"
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "hey, hows work?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "heavy",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "you better not be overworking",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "im gd Ellie its fine. these ppl r all having it worse than i am",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "but if you exhaust yourself how could you help them",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "nah its fine. couple of cold brew and im back on my feet 👌",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "yeah but you look way more fatigued these days. almost too tired to smile even",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Girl,",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "im okay. really. you should go and handle that thing with that guy",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "if you need anything, call or text me ok?",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "user",
+                "text": "you've always been trying just a little too hard",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "silly girl, look at u speaking. ur middle name is practically Self-Sabotage",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "haha. you wouldnt want to share that middle name with me though",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "idk, why not. sounds cool",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Ranna...",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2049-09-20T10:00:00"
+
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "im fiiine, omg!! Ellie if i worry u like this every time im busy id be scared to talk to u!!",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "alright. but you have to tell me when things get too rough",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2049-09-20T10:00:00"
+
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "alright alright i willlll. im pinky promising u through the screen",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "let me take you to work tmr. so you get a bit more sleep. txt me when you need a ride home too, i know someone",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2049-09-20T10:00:00"
+
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "ill take 2 free taxi trips woah. tyvm",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "good night Ranna",
+                "avatar":"./avatars/julian.png"
+               
+
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "nighty night",
+                "avatar": "./avatars/aranna.png",
+                 "timestamp":"2047-09-20T10:00:00"
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "Rasmus",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "look Rasmus, I'll come back to Dr. Fausten's division. But the moment there's a hint of a project without any regard for ethics, I'll leave the company",
+                "timestamp": "2023-09-20T10:00:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Glad you're back. Dr. Fausten did everything he could to make that deal with the higher ups",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Great, so you didn't do anything. Just empty platitudes",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "I most certainly did. Used my grant to form that committee",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "If they don't want to shell out I will. Without you here we're practically overpaid anyway",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "...Okay, sorry I lashed out. Will be back soon.",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Door's open",
+                "timestamp": "2047-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "hes spamming my messages hold on",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "u sure its fine? guy seems to care",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "care my foot",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "maybe hes just bad at it ",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "idk Ranna but he didnt care when it was most important",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "mhm, makes sense",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "as a lead, he should have been more responsible and involved",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "user",
+                "text": "instead he was busy growing roots in the lab",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "user",
+                "text": "use my research, use my work, force my hand and couldnt do shit for me",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "user",
+                "text": "wasnt as if i asked for anything big. what i asked for was standard procedures",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "user",
+                "text": "Ranna? still there?",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "still here, sorry im not sure how i can process this baggage between u both",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "no its just mine. i know hes done pretending he gives a toss",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "mhm yea...sounds like a douche. idk what else to add tho",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "its alright im just venting. sorry for taking it out on you",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2049-09-20T10:00:00"
+
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "i think u shd stop thinking abt him for a while. mute his conversation. etc etc. poor girl with zero peace of mind",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "maybe i should",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2049-09-20T10:00:00"
+
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "Ellie id love to plan a revenge against him with u but i got an early shift tmr 😭😭😭",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "cant miss it as the campaign lead",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "omg im so sorry Ranna i didnt realise it was this late 😭😭😭",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2049-09-20T10:00:00"
+
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "its not late im just rlly tired. night Ellie xo",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "good night Ranna x",
+                "avatar":"./avatars/julian.png",
+                "timestamp":"2046-09-20T10:00:00"
+
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "Rasmus",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Rasmus",
+                "text": "Hey Eleanor",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Come back to the div, everyone misses your presence",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "There are other projects if you really are committed to ditch the Grid",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "I'm sorry I didn't co-sign your requests, you know as a lead I couldn't have taken sides",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "In any case, I know you're not having any enjoyment out of dwelling in the sample room processing a few hundred requests every day",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Let me know if you have a change of mind. Every single one of us still looks for your return",
+                "timestamp": "2046-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Aranna Adebayo",
+                "text": "boo! you've been quiet",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "hey Ranna. im just stressed out",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": ":( low energy today huh. you need me to come over?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "oh, im on my way to your place actually. i couldnt have waited",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "damn, its one of those days huh",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "yeah, one of those days. it just feels wrong Ranna",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "sounds serious. idk what gobbledygook project Luminex's workin on but if they tire my girl out like this it mustve been big",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "yeah. too big.",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "alr lemme prep dinner. ring the bell when u come over. new home's a bit messy lol pls dont judge",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "oh its fine it couldnt be more of a mess than i am. see you soon",
+                "timestamp":"2045-09-20T10:00:00"
+
+            },
+            {
+                "sender":"Aranna Adebayo",
+                "text": "sys",
+                "avatar": "./avatars/aranna.png",
+                "timestamp":"2045-09-20T10:00:00"
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "Erasmus Walkenhurst",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "The experiment was a success. I should have mailed you but texting is more convenient",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "We're celebrating tonight. You coming?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Eleanor?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "So, you \"uploaded\" that lady.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "There she goes again. Look, Gamma-9 remained conscious, didn't feel any pain, and retained her memory. Isn't that proper news?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "*Ashley. Sorry, still not off the high",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "It's not an equation Rasmus. Just because it didn't hurt, doesn't mean it's right.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "What else do you want to happen? Ashley's okay, normal vitals, excellent cognitive speed, corporeal responses remain sharp, etc",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Have you ASKED her how she felt? or are you just assuming",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Eleanor, you poured a lot of blood, sweat and tears into this too. Don't you think you deserve to be happy, for once?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Happy, that Oculus declined all committee requests, and you sided with them?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "user",
+                "text": "On my mother's name I swear I'm not going near that project ever again. You can keep the grant, I'll change division.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Look, don't say that. Whether or not you agree with the ethics, the money's yours, hard-earned through your own efforts. They've wired you the payout. Non-refundable. Use it and take care of Mrs. Ashcroft",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "No matter what, I'm not turning back. I've forwarded Dr. Fausten the formal request.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Alright, I know you're rattled. But just think better of the situation. Maybe your mind is still foggy",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Rasmus, my mind has been lucid. Yours however hasn't.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "All of this, over formalities, even when the project is successful?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Yes, I'm rattled like that. In any case I'm done.",
+                "timestamp": "2045-09-20T10:05:00"
+            },
+            {
+                "sender": "user",
+                "text": "One last thing, Dr. Lawson would be utterly disappointed in you.",
+                "timestamp": "2045-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "You're talking nonsense, you don't know Dr. Lawson like that",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "And yet, I do. Good night.",
+                "timestamp": "2045-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "? What do you mean by that",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Eleanor?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Hello?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Sleep tight",
+                "timestamp": "2045-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            }
+            
+            
+        ]
+    },
+    {
+        "participants": [
+            "Rasmus",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Rasmus",
+                "text": "What the hell was that at the board meeting?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "You were there, shouldn't you know?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "You filed a complaint against a project that you and I, Dr. Fausten, and the dozens of others put their blood, sweat and tears into. What the fuck am I supposed to make out of that?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Rasmus, it was not a \"complaint\", it was a formal request to have an ethics committee on board.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "And criticised the board out in the open!! You know damn well who that implicated and what implications it had. I suggested talking to the higher ups not indirectly them",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Right, because evading ethical questions is good practice. Rasmus, this is not a race, We have time to figure it out first.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "I can't believe someone so bright like you are bogged down because of ethics. What has that ever produced?",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "It quite unambiguously produced the giants whose shoulders we stand on..?",
+                "timestamp": "2023-09-20T10:10:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "This is just about ethics then? Do you hear yourself?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Yes Rasmus, it's about e-t-h-i-c-s. Send an email if you want me to revoke my request mister project lead.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Goddamn it Eleanor, don't you get it? It's fine if you're a stickler to the rules, you are however directly opposing Oculus who funds the entire damn department. Your rebel may well cost about a hundred people their jobs??",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "OR you could just for once open your eyes, look at what I stand for, and co-sign the damn request so they could have a committee, which is more jobs.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Monday, LAB 16. We'll talk about this later.",
+                "timestamp": "2044-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            }
+        ]
+    },
+
+    {
+        "participants": [
+            "Rasmus",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Rasmus",
+                "text": "What's up with you lately Eleanor",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "What's that supposed to mean",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "You keep spacing out during meetings and work. That's quite unusual for you",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Oh? Forgive me for putting a dent onto our efficiency. You're the lead researcher after all, this affects you as well",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Come on Eleanor, you know I did not say that as a project lead. Would have sent you an email if that was the case",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Right. What do you want then?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Hey, if something's difficult, you can talk to me. We've known each other since what, '41?",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "That was not that long ago.. Any way I'm just tired. Thanks for your concerns. Sorry I lashed out",
+                "timestamp": "2023-09-20T10:10:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Is everything okay with your mom?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "She's fine. See you at lunch tomorrow.",
+                "timestamp": "2044-09-20T10:05:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ELLIE DID YOU SEE THE NEWS",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "\"YOUNG SCIENTISTS DEVELOPED COMPREHENSIVE MEDICAL SCANNER TO IDENTIFY TERMINAL ILLNESSES SINCE AS EARLY AS 3 DAYS OLD BASED ON CLINICAL TRIALS\"",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "I COULDA SWORN UR ON THERE",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "ah yea thats the whole press conference thing i told you about last week",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            
+            {
+                "sender": "Aranna Adebayo",
+                "text": "i thought it was gonna be something like new surgery equipments etc i didnt know ur SOLVING ILLNESSES",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ELEANOR ASHCROFT YOU ARE THE GREATEST HUMAN BEING ALIVE",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "oh you!! the whole team did a lot of work too",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "yeah but u told me abt this scanner thing a while ago. uve been working on that the entire time?? eyebags coffee stains messy hair and all that??",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "aaa it was a tough project",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "girl,",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "i absolutely have 0 word to describe how proud i am of u",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "hey, you took care of my mom while i was working on it. i should thank you for always backing me",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ELEANOR WE NEED TO CELEBRATE! THIS IS A HUGE THING HUGER THAN EVERYTHING ELSE",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "yepppp, im thinking Parman!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "mhm Parman, La Pierrot, Scent Mama,...anywhere",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Eleanor Ashcroft the woman that you are!!!!!",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Ranna you always know just how to make me feel special 😭😭😭",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "because you are!!!!!!",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "omg imagine SOLVING ILLNESSES!!",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "well its not really solving illnesses, its just good for diagnoses",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "shush",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "can it",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "idk ur gobbledygooks i just kno that its extremely huge!!!",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "aaaaa go on video I need to see your face rn!!!!",
+                "timestamp": "2043-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "OK OK 1 SEC BRB",
+                "timestamp": "2044-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            }
+            
+        ]
+    },
+    {
+        "participants": [
+            "Rasmus",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Rasmus",
+                "text": "Told you it was going to be a hit. $712B increase in combined company stocks the same day it was announced",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Way to go Eleanor",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "It wasn’t just me. Dr. Fausten’s team really pulled a lot of weight",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "You're practically indispensable to Luminex and Oculus now. You're too excellent :)",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "And before you undermine yourself again, this is, impartially speaking, a new height for biotechnology. So take all the credits you can, you've rightfully earned them",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Haha, you know me too well now Rasmus.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "What did Dr. Fausten say by the way? The committee thing?",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Didn't say much. Told me he's not usually involved in higher-up decisions. Bummer",
+                "timestamp": "2023-09-20T10:10:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Perhaps you could notify the leaders then? So they could give you some answers at least.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "I don't particularly have an intense interest in this but you seem to really need that",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Yeah, well, it is important to me",
+                "timestamp": "2044-09-20T10:05:00"
+            },
+            {
+                "sender": "user",
+                "text": "By the way Rasmus",
+                "timestamp": "2044-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Hm?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Thanks for all your help from graduation until now",
+                "timestamp": "2043-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "No big deal. I'm always vouching for your success",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Likewise :)",
+                "timestamp": "2044-09-20T10:05:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Rasmus",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "Erasmus, we need to talk",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Go ahead. Hey by the way you forgot to turn the lights off in LAB 4. They'll dock your salary you know",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Been forgetful lately. Anyway, the project. Why does it not have an ethics committee?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "No idea. I think Oculus didn't find enough people to assemble one?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Right. Oculus, the biggest electronics company in the entire world, couldn't form a measly dozen of people for an ethics committee.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "I'm just as clueless as you are Eleanor. Maybe you should ask Dr. Fausten, he's been working with them for years",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Yeah but why do you think they didn't form one, or at least make an initiative?",
+                "timestamp": "2023-09-20T10:10:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Hell if I know. I don't get the inner workings of how a committee is elected either",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Fine, I'll ask Dr. Fausten then",
+                "timestamp": "2044-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "By the way, your scanner granularity solution was impressive. Couldn't have thought of such a radical approach. Probably will be a big hit next year",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Thanks",
+                "timestamp": "2043-09-20T10:05:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "been quiet lately. what's up?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "nah its nothing. fundraising is tough yk",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "not that many ppl care abt conflicts further than their wallets",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "hey, it's a tough path you've picked, but it's what you think is right, right?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            
+            {
+                "sender": "Aranna Adebayo",
+                "text": "yup. aint gonna give up on it. Meldrosia research funding is sorely lacking. whatve you been up to",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "well, lets just say, comprehensive body scanners to detect illnesses early ",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ohh",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Ranna, i know your campaign is for my mom as well. but dont spread yourself too thin ok? you already take care of her when im not there",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "hey, its what i love doing. no other way thisll go Ellie",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "but you have your own life to live as well",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "hmm my own life is that i am Aranna Adebayo, friend of superscientist Eleanor Ashcroft, and fundraising expert for causes that need it. i am doing it for you, for myself, and for everyone else too",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "you're such a blessing. still, please don't overwork yourself",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Girl,",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "i know how i am. i wont self-sabotage, trust",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "okay, but if i catch you being too exhausted im locking you inside",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "lol id like to see you try",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "but thanks xx",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "one more thing",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "user",
+                "text": "hang out on sunday?",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ill think abt it",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "thinking done. of course!",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "great! see you then",
+                "timestamp": "2043-09-20T10:10:00"
+            }
+            
+        ]
+    },
+    {
+        "participants": [
+            "Rasmus",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Rasmus",
+                "text": "Nice work Eleanor. Brilliant stuff",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Couldn't have done it without Dr. Fausten. He's like a lite version of Dr. Lawson",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Really?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Stern, humorless, goal-oriented. Probably a floating brain with 2 eyeballs attached",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Aha, interesting.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Anyway, Dr. Lawson's retiring at Novonne. Big ceremony on the 18th. You coming?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Schedule's a bit packed that day. Might not",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Come on, he's THE reason why you even have a packed schedule",
+                "timestamp": "2023-09-20T10:10:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Yeah but he wouldn't want me to ditch work for formalities now would he",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Rasmus, he clearly cares about you. Don't be heartless",
+                "timestamp": "2044-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "Look, I admire Dr. Lawson as well. I'm just splitting hairs right now with the intertissue degradation mitigation stuff",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "I'll help out. Just promise me you'll go?",
+                "timestamp": "2044-09-20T10:05:00"
+            },
+            {
+                "sender": "Rasmus",
+                "text": "OK OK, it's not as if I want to miss it. Appreciate the help offer Eleanor.",
+                "timestamp": "2043-09-20T10:10:00",
+                "avatar": "./avatars/rasmus.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Aranna Adebayo",
+                "text": "sooooo how did it go?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "hes more chill than I imagined",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            
+            {
+                "sender": "Aranna Adebayo",
+                "text": "OOOOOOOOOOHHHHHHHHHH",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "there she goes again! its nothing like you think!!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "mhm mhm...so, what do you think",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "i dont know. he seems like a genuine person. invited me to La Pierrot even",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "WOAHH!! a date already??",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "??? no, we'd be discussing research",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "😂😂😂 girrlllllll",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "whattttt",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "he asked u out Ellie. omg Ellie the charmer you are",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "come on Ranna :(( it really is just a talk. since we work at the same company after all. same division as well",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "mmmhmmmmmmm i seeeeeeeeeeeee",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "pick that white dress you got last month 😉",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "omg you're impossible!! im wearing a lab coat then!",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "damn it, im out here finding a job while my girl has her fated date with a super genius 🥺🥺🥺",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "i told you its not a date!!!!!!!!!!!!!!!",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "okay okayyy lool",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "not. a. date!",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "have fun Ellie!!",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "AHHHHHHH",
+                "timestamp": "2042-09-20T10:10:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Erasmus Walkenhurst",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Greetings Miss Ashcroft,",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "I'm reaching you via personal contacts, as you've requested. How are things moving along?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "It's going well Mister Walkenhurst. By the way, you sound exactly like Dr. Lawson",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Ah, well. He instructed me on email etiquettes and I got infected with the Lawsonism haha. We're about the same age and seniority, you can just call me Walkenhurst.",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Likewise! You can call me Eleanor. Common first name, I don't mind",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Alright, well, then I insist you call me Erasmus! Whenever someone calls me by my surname I just imagine them as Dr. Lawson haha",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Sure! But it'll take me some time",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Say, do you remember the quantisomatic function you solved \"for\" me about a year back at LitenUp? How did you see it so quickly?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "You were probably just tired then. I saw that the epsilon component was at the wrong place. Coincidentally I only picked up on that because it was in your previous researches",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Yes! But how did you calculate it so quickly?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Well, you did simplify every other component to 1, probably to spot the mistake! I'm just a bit more lucid at that moment!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "That's remarkable still. A few quick glances and you solved what I got stuck on for hours haha",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "I'm flattered! But your accomplishments at Novonne is even more impressive - something I didn't even hope to match!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "You broke my record for youngest admission, and won a Karoly even :) I'd say you tend to undersell your abilities, even at your company pitch yesterday",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Hoping you're interested in working with the company, long-term?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "I am! The backing and facilities are all really impressive, it's no wonder you've been putting out tremendous works",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "Well, we can discuss those too. But let me repay you for that time at the cafe first!",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "It was just a passing remark really, there's no need!!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Erasmus Walkenhurst",
+                "text": "No no, I insist. Let's meet at La Pierrot, my treat",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/rasmus.png"
+            },
+            {
+                "sender": "user",
+                "text": "Well alright. Appreciate it!",
+                "timestamp": "2042-09-20T10:05:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "crazy thing happened today",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "oh? spill",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "i met Erasmus Walkenhurst at the cafe on my shift! what are the chances",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            
+            {
+                "sender": "Aranna Adebayo",
+                "text": "OOOOOOOOOOOOHHHHHHHHHH",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "don't get too excited!!! it was just some passing glances! i mean i doubt he knows who i am anyway",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "booo!! shoulda asserted ur dominance 😈 ",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "aa i cant really disturb him. he was working pretty hard. i can practically see him tear his hair out of his head",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ur gna be in that position soon enough Ellie :(( ion wanna see a bald Ellie!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "???",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "😂😂😂 alr but hows he",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "well idk he ordered a few drinks, sat on a problem for a few hours",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "user",
+                "text": "i thought he got smth wrong but it must be just me imagining it",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Girl,",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "dont sell urself short!! u coulda helped the poor guy!!",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "isnt that a bit odd :((( like howd u think hell react when a barista tells him his quantisomatic equation calculation was probably wrong at a minor component?",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "mhm...probably confused af 😂😂",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "not that i kno what quanti soap theatrics is 😂",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "seeeee itd have been weird 😭😭😭",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "yea but ull have to talk to him eventually",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "AHH it'll happen when it happens",
+                "timestamp": "2041-09-20T10:10:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Kormac Lawson",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Kormac Lawson",
+                "text": "Miss Ashcroft,",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/kormac.png"
+            },
+            {
+                "sender": "Kormac Lawson",
+                "text": "Great work on the live interface modelling today.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/kormac.png"
+            },
+            {
+                "sender": "user",
+                "text": "Thank you Dr. Lawson!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Kormac Lawson",
+                "text": "Keep up the good work.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/kormac.png"
+            },
+            {
+                "sender": "user",
+                "text": "I will, thank you!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Kormac Lawson",
+                "text": "👍",
+                "timestamp": "2041-09-20T10:10:00",
+                "avatar": "./avatars/kormac.png"
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "hey Ranna did you get the mail",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ur school magazine?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "yeah, im on the 4th page!!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            
+            {
+                "sender": "Aranna Adebayo",
+                "text": "i see i see. hehe",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "so thats what the famous \"Erasmus Walkenhurst\" looks like 😈😈 ",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "heyyyy all eyes on me! also yea first time i saw his face ever",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "huh?? youre not on the 4th page Ellie",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "what? no shot i already have amnesia at this age...",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ya u might. all im seein here is a really bright picture of the sun",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "oh you!!!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Girl,",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "im always soooo proud of u!!",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "you're doing well too, Ranna?",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ya, bit tough here but i've been managing! communications' harder than i thought",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "not that i have to tell u about difficulty lmfao",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "lool alright miss Theresa. lets keep doin our best",
+                "timestamp": "2038-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "💯💯💯💯💯",
+                "timestamp": "2040-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Vena Denillien",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Vena Denillien",
+                "text": "Dear Eleanor! How's your collaboration with AMSAR going?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/vena.png"
+            },
+            {
+                "sender": "user",
+                "text": "It's going well Dr. Denillien! So far everything's working out",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "user",
+                "text": "And of course, we did form an ethics committee!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Vena Denillien",
+                "text": "Great! Kormac isn't really the type to do that kind of leg work, so I had to ask you to do it, apologies!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/vena.png"
+            },
+            {
+                "sender": "user",
+                "text": "It's no problem!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "user",
+                "text": "But can I ask why Dr. Lawson's like that?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Vena Denillien",
+                "text": "Oh well you know, he just doesn't think he can do it well! Whenever we're co-authors he always asked me to do the external duties",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/vena.png"
+            },
+            {
+                "sender": "Vena Denillien",
+                "text": "It's not that Kormac doesn't respect ethics. He'll be the first to shoot down any sample request with ethical concerns",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/vena.png"
+            },
+            {
+                "sender": "Vena Denillien",
+                "text": "It's just his self-awareness and maybe some sort of aversion to committing an ethical mistake. To him that's worse than just doing poor research",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/vena.png"
+            },
+            {
+                "sender": "user",
+                "text": "Oh? Did he have a history with it.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Vena Denillien",
+                "text": "Ah, guy's never drunk! Could never make him spill anything! But rest assured, Kormac isn't a mad scientist or anything sinister!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/vena.png"
+            },
+            {
+                "sender": "user",
+                "text": "Alright! Thank you Dr. Denillien! I'll come by some time!!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Vena Denillien",
+                "text": "Door's open!",
+                "timestamp": "2040-09-20T10:10:00",
+                "avatar": "./avatars/vena.png"
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "Juliano Ashcroft",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "Dad, mom's sick. I can't cover the bills and take care of her on my own. Ranna has her own college studies to worry about too. Can you please help out?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "error",
+                "text": "The user cannot receive this message currently. Please try again later.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/julian.png"
+            },
+            {
+                "sender": "user",
+                "text": "Please for once pick up, and answer your messages, dad",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "error",
+                "text": "The user cannot receive this message currently. Please try again later.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/julian.png"
+            },
+            {
+                "sender": "user",
+                "text": "Your wife needs you. Your daughter needs you. How can you just not be here?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "error",
+                "text": "The user cannot receive this message currently. Please try again later.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/julian.png"
+            },
+            {
+                "sender": "user",
+                "text": "...",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "error",
+                "text": "The user cannot receive this message currently. Please try again later.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/julian.png"
+            },
+            {
+                "sender": "user",
+                "text": "Even if you refuse to help, just say it. Just tell me so I can give up on you ever being present.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "error",
+                "text": "The user cannot receive this message currently. Please try again later.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/julian.png"
+            },
+            {
+                "sender": "user",
+                "text": "You fucking deadbeat. How are you deserving of her? You're nothing like a human much less a parent.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "error",
+                "text": "The user cannot receive this message currently. Please try again later.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/julian.png"
+            },
+            {
+                "sender": "user",
+                "text": "Fine. I'll do it myself. I'll be so successful and so rich that you will have to crawl back to us. And then we'll kick you out despite your pleas, just like how you left despite our pleas.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "error",
+                "text": "The user cannot receive this message currently. Please try again later.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/julian.png"
+            },
+            {
+                "sender": "user",
+                "text": "Goodbye, Juliano.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "error",
+                "text": "The user cannot receive this message currently. Please try again later.",
+                "timestamp": "2039-09-20T10:10:00",
+                "avatar": "./avatars/julian.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "Rannaaaa you got into PUHE??",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "yasss!!! jumping n screaming rn as we speak",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Omg thats my girl!!!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            
+            {
+                "sender": "Aranna Adebayo",
+                "text": "hehe now ur not the only one who gets to be busy and ditch parties",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "😭😭😭😭",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "so uh can u go to the mall w/ me this weekend",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "need some new wears 4 PUHE. uve basically been in college for 2 yrs. u probs know the deal?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "tbh most of the time we just see each other in lab coats",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Girl,",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "thats so fkin cool 😭😭😭",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "im def coming tho, what time",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "2pm works?",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "sure, will be there!",
+                "timestamp": "2038-09-20T10:10:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "C612a",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Our graduation is coming. Will you attend @Eleanor ? Parch signed up to sing and actually got picked",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "?? Why did you say it like it was a surprise? You KNOW I sing good",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Man can I stay home. They can just mail me the cert can't they",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            
+            {
+                "sender": "Parchell Svitt",
+                "text": "That's not how it works you prat 😂 you literally cannot ditch your own graduation ceremony",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Can it both of you, you shouldn't mess around about your future like that.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "user",
+                "text": "Sorry guys, I might not be able to.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Hmm? Some project got in the way?",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Parchie boy you're about to be 10 dollars down",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Shut it BB this is important",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "user",
+                "text": "I have work that day. Sorry guys, my manager is strict",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Is Kormac giving you a hard time? Should tell Dr. Denillien",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Come on now she said manager, Dr. Lawson is literally just a pair of floating eyes connected to a superhuman brain",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Alright I'll cut the jokes. @Eleanor what's wrong? Can't someone cover for you?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "No, um...I work at the cafe a few blocks away. LitenUp cafe?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Hm?",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "It's the one with the amazing cold brew",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Yeah I know but I thought Ellie was getting grant?",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "user",
+                "text": "I am, it's just...my mom's been sick and I've been trying to cover some of it.",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Shit, we're so sorry Ellie. How come you never told us?",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Gosh, I can't imagine what you're going through right now...",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Ellie, is there anything we can do to help you? The school's got some hefty programmes as well doesn't it",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Man the programmes are only for studies as far as I know. Tough...",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "It's alright guys, I can manage! My bff's helping as well, and my mom's been stable",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Still, probably send a letter to Dr. Gracia, see what she can do?",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "She already did by basically reducing my academic commitment. Tuition, food and dorm is free here after all. Nothing I could ask more out of her",
+                "timestamp": "2023-09-20T10:05:00"
+               
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Hey I wouldn't be opposed to chipping in",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Ya, we're working for big tech corps after grad. Parch already got a 60k yearly offer",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "I wouldn't mind helping",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "user",
+                "text": "Guys, please, it's nothing that serious. If I'm in dire straits I'll definitely reach out!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Alright Ellie. Best of luck, and a thousand get-well-soons to Mrs. Ashcroft.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Yeah, but hey if you need a lift or anything just hmu. Pop runs a taxi company after all",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "Thank you guys. I'll be sure to reach out",
+                "timestamp": "2038-09-20T10:05:00"
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "Ranna, oh god. Is my mom okay?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Easy Ellie, she's stable now. We're keeping an eye on her",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Oh God. Oh God. How could this happen? She was cured, she's been fine for years...",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Hey now, calm down Ellie. Panicking isn't going to do much",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            
+            {
+                "sender": "Aranna Adebayo",
+                "text": "We'll take care of Mrs. Ashcroft, hospital's only a mile away from here. Arrange your schedules in that time, okay? We're here for you always",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "How can I ever thank you enough Ranna",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Let's see, by being strong and have faith. We'll manage this together.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "If only I had headed home more",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Girl,",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Get yourself together a bit, Mrs. Ashcroft wouldn't want to see you so blue and beaten now. Mmkay? She's stable now. Come visit her after you've arranged your schedules.",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Mhm..thank you, Ranna",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Nothing I wouldn't do for you Ellie xx",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Vena Denillien",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Vena Denillien",
+                "text": "Dear Eleanor. Congratulations on your big win!",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/vena.png"
+            },
+            {
+                "sender": "user",
+                "text": "Thank you Dr. Denillien! Couldn't have done it at all without your guidance!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Vena Denillien",
+                "text": "Oh don't be so humble now young lady, you've earned it! And at such a young age, too!",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/vena.png"
+            },
+            {
+                "sender": "Vena Denillien",
+                "text": "Kormac and Antonio along with a few alumni are planning an informal meeting to discuss your ideas! Let me know if you'd like to attend. Would have mailed you but emails are for formal businesses only per Novonne's policies! Room CONF-17, Saturday, 16:30. Room code \"SPRSTR\".",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/vena.png"
+            },
+            {
+                "sender": "user",
+                "text": "Thank you Dr. Denillien. Empty time slot for me so I will be there no matter what!",
+                "timestamp": "2038-09-20T10:05:00"
+            }
+            
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Aranna Adebayo",
+                "text": "anyone hooome",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "coming",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "So",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Hm??",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "i heard someone won an awaaaard!!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "How'd you even KNOW 😭",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Mrs. Ashcroft, as always. Seriously my mom's gonna have me cremated 😭😭😭😭 I got a B in math and shes riling up a storm already",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "it's not my fault 😭",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Girl,",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "Yeah?",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "I'm so damn proud of you!!! 4pm Parman BBQ, my treat!!",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "100%%%",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "user",
+                "text": "but my treat this time hehe. I got awarded something they call a \"grant\"",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "damn it miss Brains flexing on me again 😭 Ill take free BBQ tho! cya",
+                "timestamp": "2037-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "cya",
+                "timestamp": "2037-09-20T10:10:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "C612a",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "GUYS",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "user",
+                "text": "I GOT 1ST PRIZE",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "OMGOMGOMG!!!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "See I told u @Parch our girl was going to win it",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "?? I knew that",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "That's why we didnt bet",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "GUYS FOCUS @Eleanor just won a KAROLY!!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Grats @Eleanor o7 superb of you. Ur the master now 🙌",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Told youse my defence prep would help",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "It feels so surreal. Barely 2 months ago I didn't even know about this award",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Enjoy it, not even that warlord guy could bog u down",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "user",
+                "text": "Actually, Dr. Lawson was really nice the entire time! Didn't seem half as fierce",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "??????",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "?????",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "10 bucks say shes playing youse :)))",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "No, I'm serious!! He scored me higher than Dr. Sorrentino",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Did Ellie just tame THE Kormac Lawson????",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "FOCUS!!! We need to throw a party!!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "just got grant, my treat lads",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "No! Because you guys helped me so much, this one's all on me! ",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "see that @Parch thats how u treat people proper",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Oh jam it you only get us lunch when we have to do your share as well!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "REAL",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "THE CIRCUMSTANCES DICTATED THOSE OCCASIONS",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Please redirect any complaint to Dr. Denillien!",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "😂",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Yo what's so funny??",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "We're redirecting it to Miss Miller instead",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "??????????????????",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "ANYWAY when",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "Does Sunday work for you guys",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Yea works for me",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },{
+                "sender": "Samantha C. Lhoran",
+                "text": "cool with me",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Ya it works",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "It's settled then! See you guys soon!",
+                "timestamp": "2038-09-20T10:05:00"
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "C612a",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "OMG @everyone our little Ellie just got nominated for the Karoly Award!!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "user",
+                "text": "I WAS??",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "YO???",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Hah I knew it @BB you owe me a tenner",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "?? you guys were betting on this??",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Yeah because I believed in her. That neural topology mapping research was mind blowing. BB didn't read it loool",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "??? I def did ya cheeky bastard, I just overheard C613c talking abt how theres no Karoly this year",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "sucks to be you hahahahaha",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "user",
+                "text": "Guysssss what's the Karoly Award...??",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Basically your research was a top notch one in biotech. Omg and the judges will be that warlord Kormac, Dr. Sorrentino and Dr. Denillien!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "user",
+                "text": "warlord Kormac...??",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Dr. Kormac Lawson, head of Biotech dept. Super stern and scary guy. Absolute no-nonsense. Supposedly he's the one supervising that Rasmus boy. Speaking of which, he actually almost won that. Got docked by Dr. Denillien because he botched the whole ethics segment. That study was fye tho",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Ugh yeah you gotta be thorough with ethics. Kind of a rookie mistake for a guy like him",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "@Parch banked u the tenner ya rat. Ill get it back next time",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "but yea the Karoly Award is a huge thing. If u need prep for the defence we'll lend you a hand @Eleanor",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "As if you ever stood there",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "I LITERALLY GOT 2ND AND ONLY TRAILED THE '36 CLASS REP LAST TIME I SUBMITTED!!",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Ahahaha getting ur bum handed to u by ur crush is absolutely BB tier humor 😂😂😂",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "yo!!!!!",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "BB has a crush on THE Maya K. Miller??? AHAHHAHA",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "guys stop being mean :(( anyway when did you submit the article @Eleanor ?",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "user",
+                "text": "wait but I didn't submit it?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Dr. Denillien did probably. Anyway good luck! We'll be praying you win!!",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Ya good luck o7",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Our girl will do us proud 🙌🙌🙌",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "user",
+                "text": "Thanks guys! I will do my best",
+                "timestamp": "2038-09-20T10:05:00"
+            }
+
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "user",
+                "text": "are you awake, Ranna?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "it's like 1 in the morning now. sup",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "didnt realize it was this late",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            
+            {
+                "sender": "Aranna Adebayo",
+                "text": "zzzz is there something on your mind? spill it Ellie",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "it's been so long since i got into Novonne",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "time flies, yea. figured a genius like you would have known that lol",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "hey Ranna, what's your dream?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "umm, let's see. go to PUHE, get a communications degree, run fundraisers for exploited ethnic minorities, and Meldrosia patients",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "PUHE?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "new one with a lot of attention and scholarship. heard its corpo backed. Pulitzer University of Humanities Excellence",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "kind of a huge thing right now, some gd programs n job security postgrad",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "you have it all figured out huh?",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "look whos talkin. u chose Novonne at 15, i barely made up my mind recently",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "i got into Novonne cause i liked science. chose biotech for my mom, thankfully good at it. but now im not sure what im doing with it",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ask ur peers then. im pretty sure u can land a top bracket job with how smart u r",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "been asking. none seem to really hit",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "hey, ull figure it out. we got a few years left on the clock to make up our minds. but theres one thing i really wanna do regardless of career",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "which is?",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "being your bff ofc",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "nice career that is. you really do have everything figured out",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "yeah well im Aranna Adebayo. but i gotta prep my application soon, so ill hit the hay now",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "and yes, u need enough sleep too Ellie. night xo",
+                "timestamp": "2038-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "goodnight, Ranna",
+                "timestamp": "2038-09-20T10:10:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Aranna Adebayo",
+                "text": "soooooo",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "whatttt",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "whos this Rasmus guy huh??",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "what does he have to do with me??",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "yeahhhhh riiiiight suuuuure",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "whats that supposed to mean 😭 he's literally the guy whose record i broke. u even brought that up yourself that one time",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "oooooohhhhhhh",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "don't \"ooh\" me Ranna im srs. dont even know what that guy looks like",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Girl",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "only 2 ways this'll end and u know it",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "no i dont?? stop speaking in riddles 😭",
+                "timestamp": "2036-09-20T10:10:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "ur supposed to be a genius. go figure 🥹🥹🥹",
+                "timestamp": "2037-09-20T10:10:00"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Aranna Adebayo",
+                "text": "wyddd",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "lots of work Ranna, lots 😭😭😭😭😭",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "omg poor girl...you need some rest zzzz",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "aaa it's fine the group I'm in is really supportive!! Feels like I have 4 Rannas to help me!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "mmmm good. if they bully u ill actually handle them, just lmk",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "hey now they're awesome, no worries",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "come by sometimes mmk, i miss hanging out w/ u 🥹",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "free next week! tell me when you have the plans",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "lets goo!!",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "C612a",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Parchell Svitt",
+                "text": "Amazing job on today's analyses Eleanor!! I can scarcely believe you're this young! Almost as if that Rasmus guy just cloned himself",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "user",
+                "text": "Ahhh thank you so much. By the way, his name's Erasmus Walkenhurst isn't it?",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Ya probably, that guy was a real stunner for Novonne. And yet we've got another budding genius not long after him! WTF",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Yeah WTF. At your age I was watching cartoons and roleplaying as the mad scientist guy",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Parch you don't need to tell her your dark deep secrets",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "user",
+                "text": "I hope we could continue working together!",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Look at miss genius over here! So damn adorable!!!!!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "user",
+                "text": "I think you're really beautiful too Sam",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Parchell Svitt",
+                "text": "Heh you got that right",
+                "timestamp": "2023-09-20T10:05:00",
+                "avatar": "./avatars/parchell.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Oh you!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Samantha C. Lhoran",
+                "text": "Anyway, the research was submitted. Missing @BB was a bit of a hiccup, thankfully Eleanor did well.",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/samantha.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Sorry guys, the conference got me hanging by a thread! I'll make it up to you next dinner, promise 🥹🥹",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            },
+            {
+                "sender": "Brian Barenshaw",
+                "text": "Also @Eleanor ur awesome!!",
+                "timestamp": "2036-09-20T10:10:00",
+                "avatar": "./avatars/brian.png"
+            }
+        ]
+    },
+    {
+        "participants": [
+            "Aranna Adebayo",
+            "You"
+        ],
+        "messages": [
+            {
+                "sender": "Aranna Adebayo",
+                "text": "GIRL YOU GOT INTO NOVONNE??",
+                "timestamp": "2023-09-20T10:00:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "How'd you already hear about that?? asdhwqhdashjds",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "Mrs. Ashcroft been bragging about it to my mom and she kept nagging me since!! honestly why u gotta be so talented 😭😭",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "loool she's like that please forgive me 😭",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "and also, the youngest EVER? That's crazy??",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "yeah you know what I couldn't believe it either",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "user",
+                "text": "apparently last record holder was about 3 months older than me when he got in",
+                "timestamp": "2023-09-20T10:05:00"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "alright no need to brag further miss Brains. come over for celebration, my treat",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "Aranna Adebayo",
+                "text": "but you gotta give me some of that intellect!!",
+                "timestamp": "2023-09-20T10:10:00",
+                "avatar": "./avatars/aranna.png"
+            },
+            {
+                "sender": "user",
+                "text": "lol maybe ill study neuroscience for that!!",
+                "timestamp": "2036-09-20T10:05:00"
+            }
+        ]
+    }
+]
